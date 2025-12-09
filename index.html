@@ -3,111 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Western Greenbrier Disposal Service | Rainelle, WV</title>
+    <title>Western Greenbrier Disposal Service</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
     <style>
-        /* This CSS mimics the clean, blue/white look of the Tygarts site */
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
+        body { font-family: 'Roboto', sans-serif; }
         
-        /* Header Section */
-        header { background-color: #0056b3; color: white; padding: 15px 0; }
-        .container { width: 90%; max-width: 1100px; margin: auto; overflow: hidden; }
-        .logo { float: left; font-size: 1.5em; font-weight: bold; }
-        .logo span { color: #f4f4f4; font-weight: normal; }
-        .header-contact { float: right; font-weight: bold; }
+        /* Top Bar styling */
+        .top-bar { background-color: #0d2e5c; color: white; padding: 10px 0; font-size: 0.9rem; }
+        .top-bar a { color: white; text-decoration: none; margin-left: 15px; }
         
-        /* Navigation */
-        nav { background: #333; color: white; padding: 10px 0; text-align: center; }
-        nav a { color: white; text-decoration: none; padding: 0 15px; font-weight: bold; }
-        nav a:hover { color: #0056b3; }
+        /* Navigation styling */
+        .navbar { box-shadow: 0 2px 4px rgba(0,0,0,.1); padding: 15px 0; background: white; }
+        .navbar-brand { font-weight: bold; font-size: 1.5rem; color: #0d2e5c !important; }
+        .nav-link { font-weight: 500; color: #333 !important; margin-left: 15px; }
+        .nav-link:hover { color: #007bff !important; }
+        .btn-quote { background-color: #28a745; color: white; font-weight: bold; border-radius: 20px; padding: 8px 25px; }
+        .btn-quote:hover { background-color: #218838; color: white; }
 
-        /* Hero / Main Image Section */
-        .hero { background: #e2e2e2; padding: 50px 0; text-align: center; }
-        .hero h1 { font-size: 2.5em; margin-bottom: 10px; color: #0056b3; }
-        .hero p { font-size: 1.2em; margin-bottom: 20px; }
-        .btn { display: inline-block; background: #0056b3; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
-        
-        /* Services Columns */
-        .services { padding: 40px 0; display: flex; flex-wrap: wrap; justify-content: space-between; }
-        .service-box { flex: 1; min-width: 300px; background: #f9f9f9; padding: 20px; margin: 10px; border: 1px solid #ddd; text-align: center; }
-        .service-box h3 { color: #0056b3; }
-        
-        /* Contact / Info Section */
-        .info-section { background: #0056b3; color: white; padding: 40px 0; text-align: center; }
-        .info-section a { color: #fff; font-weight: bold; }
-
-        /* Footer */
-        footer { background: #333; color: white; text-align: center; padding: 20px 0; margin-top: 20px; }
-        
-        /* Mobile Responsive */
-        @media(max-width: 768px) {
-            .logo, .header-contact { float: none; text-align: center; display: block; padding-bottom: 10px; }
-            .services { flex-direction: column; }
+        /* Hero Section (The big image at the top) */
+        .hero-section {
+            /* This URL is a placeholder professional trash truck image. You can change this later. */
+            background: linear-gradient(rgba(13, 46, 92, 0.7), rgba(13, 46, 92, 0.7)), url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
         }
+        .hero-section h1 { font-size: 3.5rem; font-weight: 700; margin-bottom: 20px; }
+        .hero-section p { font-size: 1.25rem; margin-bottom: 30px; opacity: 0.9; }
+
+        /* Services Section */
+        .service-card { border: none; transition: transform 0.3s; text-align: center; padding: 30px 20px; background: #f8f9fa; border-radius: 8px; height: 100%; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); background: white; }
+        .icon-box { font-size: 3rem; color: #007bff; margin-bottom: 20px; }
+        
+        /* Call to Action Bar */
+        .cta-bar { background-color: #28a745; color: white; padding: 40px 0; text-align: center; }
+        
+        /* Footer */
+        footer { background-color: #333; color: #ccc; padding: 40px 0 20px; }
+        footer h5 { color: white; margin-bottom: 20px; }
+        footer a { color: #ccc; text-decoration: none; display: block; margin-bottom: 10px; }
+        footer a:hover { color: white; }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">Western Greenbrier <span>Disposal Service</span></div>
-            <div class="header-contact">Call Us: (304) 438-8051</div>
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span><i class="fas fa-map-marker-alt"></i> Serving Rainelle & Greenbrier County</span>
+            <div>
+                <a href="tel:3044388051"><i class="fas fa-phone-alt"></i> (304) 438-8051</a>
+                <a href="mailto:info@westerngreenbrier.com"><i class="fas fa-envelope"></i> Email Us</a>
+            </div>
         </div>
-    </header>
+    </div>
 
-    <nav>
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a href="#">Home</a>
-            <a href="#services">Services</a>
-            <a href="#schedule">Schedule</a>
-            <a href="#contact">Contact Us</a>
+            <a class="navbar-brand" href="#">WESTERN GREENBRIER <span style="font-weight:300; font-size: 0.8em; display:block; line-height:1;">DISPOSAL SERVICE</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#residential">Residential</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#commercial">Commercial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-3">
+                        <a href="tel:3044388051" class="btn btn-quote">Start Service</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="hero">
+    <section class="hero-section">
         <div class="container">
-            <h1>Reliable Sanitation Services</h1>
-            <p>Serving Rainelle and Greenbrier County for over 50 years.</p>
-            <a href="#contact" class="btn">Start Service</a>
+            <h1>Local. Reliable. Family Owned.</h1>
+            <p>Providing trusted waste management services to Rainelle and surrounding areas for over 50 years.</p>
+            <a href="#contact" class="btn btn-primary btn-lg px-5 me-2">Get a Quote</a>
+            <a href="#services" class="btn btn-outline-light btn-lg px-5">Our Services</a>
         </div>
-    </div>
+    </section>
 
-    <div class="container">
-        <div id="services" class="services">
-            <div class="service-box">
-                <h3>Residential Trash</h3>
-                <p>Dependable weekly pickup for homes in Rainelle and surrounding areas. We offer competitive monthly and quarterly rates.</p>
-            </div>
-            <div class="service-box">
-                <h3>Commercial Waste</h3>
-                <p>Waste solutions for businesses of all sizes. Contact us for dumpster sizes and pickup frequency options.</p>
-            </div>
-            <div class="service-box">
-                <h3>Special Pickups</h3>
-                <p>Have large items or extra debris? Call us to arrange a special pickup or to ask about dump trailer availability.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="contact" class="info-section">
+    <section id="services" class="py-5">
         <div class="container">
-            <h2>Contact Us</h2>
-            <p><strong>Western Greenbrier Disposal Service</strong></p>
-            <p>311 Oregon Ave (PO Box 652)<br>Rainelle, WV 25962</p>
-            <br>
-            <h3>(304) 438-8051</h3>
-            <p><em>Call us to set up new service or pay your bill.</em></p>
-            <br>
-            <div id="schedule" style="border-top: 1px solid #fff; padding-top: 20px; margin-top: 20px;">
-                <h3>Pickup Schedule</h3>
-                <p>Please have your trash out by <strong>6:00 AM</strong> on your scheduled day.</p>
-                <p>Holidays may affect pickup times. Call for details.</p>
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-dark">Our Services</h2>
+                <p class="text-muted">Professional waste solutions for home and business.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card" id="residential">
+                        <div class="icon-box"><i class="fas fa-home"></i></div>
+                        <h3>Residential Trash</h3>
+                        <p>Weekly curbside pickup you can count on. We offer affordable monthly and quarterly rates for households in Rainelle.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card" id="commercial">
+                        <div class="icon-box"><i class="fas fa-building"></i></div>
+                        <h3>Commercial Dumpsters</h3>
+                        <p>Reliable waste collection for businesses. Various dumpster sizes available with flexible pickup schedules.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="icon-box"><i class="fas fa-truck-loading"></i></div>
+                        <h3>Special Pickups</h3>
+                        <p>Need to get rid of bulky items, furniture, or construction debris? Call us to schedule a special haul-away.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4">
+                    <h2 class="fw-bold mb-4">Contact Us</h2>
+                    <p class="lead">Ready to start service? Give us a call or stop by our office.</p>
+                    
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="me-3 text-primary fs-4"><i class="fas fa-map-marked-alt"></i></div>
+                        <div>
+                            <h5 class="fw-bold">Our Location</h5>
+                            <p>311 Oregon Ave (PO Box 652)<br>Rainelle, WV 25962</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="me-3 text-primary fs-4"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h5 class="fw-bold">Phone Number</h5>
+                            <p class="mb-0"><a href="tel:3044388051" class="text-decoration-none text-dark">(304) 438-8051</a></p>
+                            <small class="text-muted">Mon-Fri: 8am - 4pm</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="width: 100%; height: 300px; background-color: #ddd; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <iframe width="100%" height="300" frameborder="0" style="border:0; border-radius: 8px;" src="https://www.google.com/maps?q=311+Oregon+Ave,+Rainelle,+WV+25962&output=embed"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Western Greenbrier Disposal Service. All Rights Reserved.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase">Western Greenbrier</h5>
+                    <p class="small">Your trusted partner for clean and reliable waste disposal in Greenbrier County.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <a href="#">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase">Contact</h5>
+                    <p class="small"><i class="fas fa-phone me-2"></i> (304) 438-8051</p>
+                    <p class="small"><i class="fas fa-map-marker-alt me-2"></i> Rainelle, WV</p>
+                </div>
+            </div>
+            <div class="text-center pt-3 border-top border-secondary mt-3">
+                <p class="small mb-0">&copy; 2025 Western Greenbrier Disposal Service. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

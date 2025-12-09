@@ -32,10 +32,10 @@
         <div class="container d-flex justify-content-between">
             <div>
                 <i class="fa fa-envelope text-primary mr-2"></i>
-                <small>UPDATE_EMAIL@example.com</small>
+                <small>wgreenbrierdisposal@gmail.com</small>
                 <span class="mx-2">|</span>
                 <i class="fa fa-phone-alt text-primary mr-2"></i>
-                <small>UPDATE_PHONE (e.g. 304-555-1234)</small>
+                <small>(304) 438-8051</small>
             </div>
             <div>
                 <small>Serving Western Greenbrier &amp; surrounding areas</small>
@@ -47,7 +47,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
         <div class="container">
             <a href="#home" class="navbar-brand">
-                <h1 class="m-0 text-primary" style="font-size: 1.6rem;">Western Greenbrier Disposal</h1>
+                <h1 class="m-0 text-primary" style="font-size: 1.6rem;">Western Greenbrier Disposal Service</h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -58,9 +58,10 @@
                     <a href="#services" class="nav-item nav-link">Services</a>
                     <a href="#holiday" class="nav-item nav-link">Holiday Schedule</a>
                     <a href="#faq" class="nav-item nav-link">FAQ</a>
+                    <a href="#pay" class="nav-item nav-link">Pay Online</a>
                     <a href="#contact" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="UPDATE_PAY_PORTAL_URL" class="btn btn-primary" target="_blank" rel="noopener">
+                <a href="#pay" class="btn btn-primary">
                     Pay Online
                 </a>
             </div>
@@ -82,7 +83,7 @@
                         <a href="#contact" class="btn btn-light text-primary mr-3 mb-2">
                             Start Service
                         </a>
-                        <a href="UPDATE_PAY_PORTAL_URL" class="btn btn-outline-light mb-2" target="_blank" rel="noopener">
+                        <a href="#pay" class="btn btn-outline-light mb-2">
                             Pay Your Bill
                         </a>
                     </div>
@@ -92,19 +93,19 @@
                         <h5 class="mb-3"><i class="fa fa-info-circle text-primary mr-2"></i>Office &amp; Route Info</h5>
                         <p class="mb-2">
                             <i class="fa fa-map-marker-alt text-primary mr-2"></i>
-                            <strong>Office:</strong> UPDATE_OFFICE_ADDRESS
+                            <strong>Office:</strong> 311 Oregon Avenue, Rainelle, WV 25962
                         </p>
                         <p class="mb-2">
                             <i class="fa fa-phone-alt text-primary mr-2"></i>
-                            <strong>Phone:</strong> UPDATE_PHONE
+                            <strong>Phone:</strong> (304) 438-8051
                         </p>
                         <p class="mb-2">
                             <i class="fa fa-clock text-primary mr-2"></i>
-                            <strong>Hours:</strong> Mon – Fri, 8:00 AM – 4:00 PM
+                            <strong>Hours:</strong> Mon – Fri, 9:00 AM – 3:00 PM
                         </p>
                         <p class="mb-0">
                             <i class="fa fa-map text-primary mr-2"></i>
-                            <strong>Service Area:</strong> Western Greenbrier County &amp; nearby communities. Call to confirm your address.
+                            <strong>Service Area:</strong> Rainelle and surrounding Western Greenbrier communities. Call to confirm your address.
                         </p>
                     </div>
                 </div>
@@ -132,7 +133,7 @@
                             <h5 class="mb-0">Residential Trash Collection</h5>
                         </div>
                         <p class="mb-3">
-                            Weekly curbside trash pickup for homes, cabins, and rental properties. We’ll help you get
+                            Weekly curbside pickup for homes, cabins, and rental properties. We’ll help you get
                             set up with service at your address and explain pickup guidelines.
                         </p>
                         <ul class="pl-3 mb-3">
@@ -224,7 +225,7 @@
                         </p>
                         <ul class="mb-0 pl-3">
                             <li>Check mailed or emailed notices</li>
-                            <li>Call our office: <strong>UPDATE_PHONE</strong></li>
+                            <li>Call our office: <strong>(304) 438-8051</strong></li>
                             <li>Contact us using the form below</li>
                         </ul>
                     </div>
@@ -262,6 +263,49 @@
         </div>
     </section>
 
+    <!-- Pay Online -->
+    <section id="pay" class="py-5">
+        <div class="container">
+            <h6 class="text-secondary text-uppercase font-weight-semi-bold mb-2">Pay Online</h6>
+            <h2 class="mb-4">Secure Online Bill Pay</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <p class="mb-3">
+                        Use our secure online payment portal to pay your bill. You’ll need your invoice number
+                        and the total amount due from your bill.
+                    </p>
+                    <p class="mb-2">
+                        When you click “Go to Secure Payment”, you’ll be sent to our CardPointe payment page to
+                        complete your payment.
+                    </p>
+                    <p class="mb-0 small text-muted">
+                        Example payment URL format:<br>
+                        <code>https://westerngreenbri.securepayments.cardpointe.com/pay?invoice=51069&amp;total=9&amp;billCountry=US</code>
+                    </p>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="bg-light rounded p-4 h-100">
+                        <h5 class="mb-3">Enter Your Payment Details</h5>
+                        <form id="pay-form">
+                            <div class="form-group">
+                                <label for="invoiceNumber">Invoice Number</label>
+                                <input type="text" class="form-control" id="invoiceNumber" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="invoiceTotal">Total Amount Due (numbers only)</label>
+                                <input type="number" step="0.01" min="0" class="form-control" id="invoiceTotal" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Go to Secure Payment
+                            </button>
+                            <p id="pay-error" class="mt-2 small text-danger" style="display:none;"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact / Service Request -->
     <section id="contact" class="py-5">
         <div class="container">
@@ -274,19 +318,20 @@
                         <h5 class="mb-3">Office Information</h5>
                         <p class="mb-2">
                             <i class="fa fa-map-marker-alt text-primary mr-2"></i>
-                            <strong>Address:</strong> UPDATE_OFFICE_ADDRESS
+                            <strong>Address:</strong> 311 Oregon Avenue, Rainelle, WV 25962
                         </p>
                         <p class="mb-2">
                             <i class="fa fa-phone-alt text-primary mr-2"></i>
-                            <strong>Phone:</strong> <a href="tel:UPDATE_PHONE_RAW">UPDATE_PHONE</a>
+                            <strong>Phone:</strong> <a href="tel:13044388051">(304) 438-8051</a>
                         </p>
                         <p class="mb-2">
                             <i class="fa fa-envelope text-primary mr-2"></i>
-                            <strong>Email:</strong> <a href="mailto:UPDATE_EMAIL@example.com">UPDATE_EMAIL@example.com</a>
+                            <strong>Email:</strong> <a href="mailto:wgreenbrierdisposal@gmail.com">wgreenbrierdisposal@gmail.com</a>
                         </p>
                         <p class="mb-2">
                             <i class="fa fa-clock text-primary mr-2"></i>
-                            <strong>Hours:</strong> Mon – Fri, 8:00 AM – 4:00 PM
+                            <strong>Hours:</strong> Mon – Fri, 9:00 AM – 3:00 PM<br>
+                            <span class="ml-4">Saturday &amp; Sunday: Closed</span>
                         </p>
                         <p class="mb-0 small text-muted">
                             If you have a billing question, please include your account number if available.
@@ -297,8 +342,8 @@
                 <div class="col-lg-7 mb-4">
                     <div class="bg-light rounded p-4 h-100">
                         <h5 class="mb-3">Service Request / Questions</h5>
-                        <!-- For now this can be a mailto or just a non-functional form you later connect to a backend -->
-                        <form action="mailto:UPDATE_EMAIL@example.com" method="post" enctype="text/plain">
+                        <!-- For now this uses mailto; later you can hook it to a backend or form service -->
+                        <form action="mailto:wgreenbrierdisposal@gmail.com" method="post" enctype="text/plain">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label>Your Name</label>
@@ -353,7 +398,7 @@
         </div>
     </footer>
 
-    <!-- Back to Top (optional, from template) -->
+    <!-- Back to Top -->
     <a href="#home" class="btn btn-primary px-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
     <!-- JS Libraries (same as template, fine to keep) -->
@@ -369,9 +414,44 @@
     <!-- Template JS (for back-to-top, etc.) -->
     <script src="js/main.js"></script>
 
-    <!-- Auto year -->
+    <!-- Auto year + Pay form logic -->
     <script>
+        // Footer year
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Pay form handler: build CardPointe URL and redirect
+        const payForm = document.getElementById('pay-form');
+        const payError = document.getElementById('pay-error');
+        const basePayUrl = 'https://westerngreenbri.securepayments.cardpointe.com/pay';
+
+        payForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            payError.style.display = 'none';
+            payError.textContent = '';
+
+            const invoice = document.getElementById('invoiceNumber').value.trim();
+            const total = document.getElementById('invoiceTotal').value.trim();
+
+            if (!invoice || !total) {
+                payError.textContent = 'Please enter both your invoice number and total amount due.';
+                payError.style.display = 'block';
+                return;
+            }
+
+            // Very basic numeric check for total
+            if (isNaN(total) || Number(total) <= 0) {
+                payError.textContent = 'Please enter a valid number for the total amount.';
+                payError.style.display = 'block';
+                return;
+            }
+
+            const url = basePayUrl
+                + '?invoice=' + encodeURIComponent(invoice)
+                + '&total=' + encodeURIComponent(total)
+                + '&billCountry=US';
+
+            window.location.href = url;
+        });
     </script>
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Western Greenbrier Disposal Service | Residential & Commercial Trash Collection</title>
+    <title>Western Greenbrier Disposal Service | Trash Collection</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="trash, garbage, sanitation, residential trash, commercial trash, dumpster, Western Greenbrier WV" name="keywords">
     <meta content="Local, reliable residential and commercial trash collection with simple billing and convenient online payment options for Western Greenbrier and surrounding areas." name="description">
@@ -18,7 +18,7 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
+    <!-- Libraries Stylesheet (from template, safe to keep) -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
@@ -26,732 +26,337 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <!-- Header Start -->
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Left brand block (desktop) -->
-            <div class="col-lg-3 bg-secondary d-none d-lg-block">
-                <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                    <h1 class="m-0 display-4 text-primary text-center" style="line-height:1.1;">
-                        Western<br>Greenbrier<br>Disposal
-                    </h1>
+<body id="home">
+    <!-- Top Bar -->
+    <div class="container-fluid bg-dark text-white py-2 d-none d-md-block">
+        <div class="container d-flex justify-content-between">
+            <div>
+                <i class="fa fa-envelope text-primary mr-2"></i>
+                <small>UPDATE_EMAIL@example.com</small>
+                <span class="mx-2">|</span>
+                <i class="fa fa-phone-alt text-primary mr-2"></i>
+                <small>UPDATE_PHONE (e.g. 304-555-1234)</small>
+            </div>
+            <div>
+                <small>Serving Western Greenbrier &amp; surrounding areas</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container">
+            <a href="#home" class="navbar-brand">
+                <h1 class="m-0 text-primary" style="font-size: 1.6rem;">Western Greenbrier Disposal</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <div class="navbar-nav mr-3">
+                    <a href="#home" class="nav-item nav-link active">Home</a>
+                    <a href="#services" class="nav-item nav-link">Services</a>
+                    <a href="#holiday" class="nav-item nav-link">Holiday Schedule</a>
+                    <a href="#faq" class="nav-item nav-link">FAQ</a>
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="UPDATE_PAY_PORTAL_URL" class="btn btn-primary" target="_blank" rel="noopener">
+                    Pay Online
                 </a>
             </div>
-            <div class="col-lg-9">
-                <!-- Top contact bar -->
-                <div class="row bg-dark d-none d-lg-flex">
-                    <div class="col-lg-7 text-left text-white">
-                        <div class="h-100 d-inline-flex align-items-center border-right border-primary py-2 px-3">
-                            <i class="fa fa-envelope text-primary mr-2"></i>
-                            <small>UPDATE_EMAIL@example.com</small>
-                        </div>
-                        <div class="h-100 d-inline-flex align-items-center py-2 px-2">
-                            <i class="fa fa-phone-alt text-primary mr-2"></i>
-                            <small>UPDATE_PHONE (e.g. 304-555-1234)</small>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 text-right">
-                        <!-- Social icons (optional) -->
-                        <div class="d-inline-flex align-items-center pr-2">
-                            <!-- Add real links or remove icons you don't use -->
-                            <a class="text-primary p-2" href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a class="text-primary p-2" href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        </div>
+    </nav>
 
-                <!-- Main nav -->
-                <nav class="navbar navbar-expand-lg bg-white navbar-light p-0">
-                    <a href="index.html" class="navbar-brand d-block d-lg-none">
-                        <h1 class="m-0 display-5 text-primary">WG Disposal</h1>
-                    </a>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav mr-auto py-0">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="#about" class="nav-item nav-link">About</a>
-                            <a href="#services" class="nav-item nav-link">Services</a>
-                            <a href="#why-us" class="nav-item nav-link">Why Choose Us</a>
-                            <a href="#contact" class="nav-item nav-link">Contact</a>
-                        </div>
-                        <a href="UPDATE_PAY_PORTAL_URL" class="btn btn-primary mr-3 d-none d-lg-block" target="_blank" rel="noopener">
-                            Pay Online
+    <!-- Hero / Intro -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase font-weight-semi-bold mb-2">Residential &amp; Commercial Sanitation</h5>
+                    <h1 class="display-4 mb-3">Reliable Trash Collection for Western Greenbrier</h1>
+                    <p class="mb-4">
+                        Western Greenbrier Disposal Service provides simple, dependable weekly trash collection with
+                        straightforward billing and friendly, local customer support.
+                    </p>
+                    <div class="d-flex flex-wrap">
+                        <a href="#contact" class="btn btn-light text-primary mr-3 mb-2">
+                            Start Service
+                        </a>
+                        <a href="UPDATE_PAY_PORTAL_URL" class="btn btn-outline-light mb-2" target="_blank" rel="noopener">
+                            Pay Your Bill
                         </a>
                     </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <!-- Header End -->
-
-
-    <!-- Carousel Start (hero) -->
-    <div class="container-fluid p-0">
-        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#header-carousel" data-slide-to="1"></li>
-                <li data-target="#header-carousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <!-- Slide 1 -->
-                <div class="carousel-item active">
-                    <img class="img-fluid" src="img/carousel-1.jpg" alt="Residential trash collection route">
-                    <div class="carousel-caption d-flex align-items-center justify-content-center">
-                        <div class="p-5" style="width: 100%; max-width: 900px;">
-                            <h5 class="text-primary text-uppercase mb-md-3">Residential &amp; Commercial Sanitation</h5>
-                            <h1 class="display-3 text-white mb-md-4">Reliable Trash Collection for Western Greenbrier</h1>
-                            <a href="#contact" class="btn btn-primary">Start Service</a>
-                        </div>
-                    </div>
                 </div>
-                <!-- Slide 2 -->
-                <div class="carousel-item">
-                    <img class="img-fluid" src="img/carousel-2.jpg" alt="Garbage truck in service">
-                    <div class="carousel-caption d-flex align-items-center justify-content-center">
-                        <div class="p-5" style="width: 100%; max-width: 900px;">
-                            <h5 class="text-primary text-uppercase mb-md-3">Local, Dependable Service</h5>
-                            <h1 class="display-3 text-white mb-md-4">Keeping Homes &amp; Businesses Clean and On Schedule</h1>
-                            <a href="UPDATE_PAY_PORTAL_URL" class="btn btn-primary" target="_blank" rel="noopener">Pay Your Bill</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide 3 -->
-                <div class="carousel-item">
-                    <img class="img-fluid" src="img/carousel-3.jpg" alt="Trash bins ready for pickup">
-                    <div class="carousel-caption d-flex align-items-center justify-content-center">
-                        <div class="p-5" style="width: 100%; max-width: 900px;">
-                            <h5 class="text-primary text-uppercase mb-md-3">Family-Style Customer Care</h5>
-                            <h1 class="display-3 text-white mb-md-4">Straightforward Billing &amp; Friendly Support</h1>
-                            <a href="#services" class="btn btn-primary">View Our Services</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Carousel End -->
-
-
-    <!-- Contact Info Start -->
-    <div class="container-fluid pb-5 contact-info" id="contact">
-        <div class="row">
-            <div class="col-lg-4 p-0">
-                <div class="contact-info-item d-flex align-items-center justify-content-center bg-primary text-white py-4 py-lg-0">
-                    <i class="fa fa-3x fa-map-marker-alt text-secondary mr-4"></i>
-                    <div>
-                        <h5 class="mb-2">Our Office</h5>
-                        <p class="m-0">UPDATE_OFFICE_ADDRESS (e.g. Rupert, WV)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 p-0">
-                <div class="contact-info-item d-flex align-items-center justify-content-center bg-secondary text-white py-4 py-lg-0">
-                    <i class="fa fa-3x fa-envelope-open text-primary mr-4"></i>
-                    <div>
-                        <h5 class="mb-2">Email Us</h5>
-                        <p class="m-0">UPDATE_EMAIL@example.com</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 p-0">
-                <div class="contact-info-item d-flex align-items-center justify-content-center bg-primary text-white py-4 py-lg-0">
-                    <i class="fa fa-3x fa-phone-alt text-secondary mr-4"></i>
-                    <div>
-                        <h5 class="mb-2">Call Us</h5>
-                        <p class="m-0">UPDATE_PHONE (e.g. 304-555-1234)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact Info End -->
-
-
-    <!-- About Start -->
-    <div class="container-fluid py-5 mb-5" id="about">
-        <div class="container">
-            <div class="row">
-                <!-- Years of service card -->
                 <div class="col-lg-5">
-                    <div class="d-flex flex-column align-items-center justify-content-center bg-about rounded h-100 py-5 px-3">
-                        <i class="fa fa-5x fa-trash text-primary mb-4"></i>
-                        <h1 class="display-2 text-white mb-2" data-toggle="counter-up">UPDATE_YEARS</h1>
-                        <h2 class="text-white m-0">Years Serving Our Community</h2>
-                    </div>
-                </div>
-                <!-- About text -->
-                <div class="col-lg-7 pt-5 pb-lg-5">
-                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Learn About Us</h6>
-                    <h1 class="mb-4 section-title">Local Trash Collection You Can Count On</h1>
-                    <h5 class="text-muted font-weight-normal mb-3">
-                        Western Greenbrier Disposal Service is a locally operated sanitation company providing
-                        dependable trash collection for homes and businesses in Western Greenbrier and surrounding areas.
-                    </h5>
-                    <p>
-                        We focus on simple, reliable service. That means consistent pickup schedules, clear communication,
-                        and billing options that work for busy families, landlords, and business owners. From weekly
-                        residential routes to commercial accounts and special pickups, our goal is to keep your property
-                        clean without you having to think about it.
-                    </p>
-                    <p>
-                        Whether you are setting up new service, moving to a different address, or managing multiple locations,
-                        our team is here to help you choose the right service and answer any questions along the way.
-                    </p>
-                    <div class="d-flex align-items-center pt-4">
-                        <a href="#services" class="btn btn-primary mr-5">View Services</a>
-                        <!-- Optional: promo video or remove this block completely if not needed -->
-                        <button type="button" class="btn-play" data-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
-                            <span></span>
-                        </button>
-                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Watch Route Overview</h5>
+                    <div class="bg-white text-dark rounded p-4 shadow-sm">
+                        <h5 class="mb-3"><i class="fa fa-info-circle text-primary mr-2"></i>Office &amp; Route Info</h5>
+                        <p class="mb-2">
+                            <i class="fa fa-map-marker-alt text-primary mr-2"></i>
+                            <strong>Office:</strong> UPDATE_OFFICE_ADDRESS
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-phone-alt text-primary mr-2"></i>
+                            <strong>Phone:</strong> UPDATE_PHONE
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-clock text-primary mr-2"></i>
+                            <strong>Hours:</strong> Mon – Fri, 8:00 AM – 4:00 PM
+                        </p>
+                        <p class="mb-0">
+                            <i class="fa fa-map text-primary mr-2"></i>
+                            <strong>Service Area:</strong> Western Greenbrier County &amp; nearby communities. Call to confirm your address.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- About End -->
+    </section>
 
-
-    <!-- Video Modal Start (optional) -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->
-
-
-    <!-- Services Start -->
-    <div class="container-fluid bg-service py-5" id="services">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Our Services</h6>
-                    <h1 class="mb-4 section-title text-white">Trash &amp; Sanitation Services for Your Home or Business</h1>
-                    <p class="text-white">
-                        We provide straightforward, dependable trash collection for residential and commercial customers.
-                        From weekly routes to special pickups, we’ll help you choose the service that fits your needs and
-                        your schedule.
-                    </p>
-                    <a href="#contact" class="btn btn-primary mt-3 py-2 px-4">Request Service</a>
-                </div>
-                <div class="col-lg-6 pt-5 pt-lg-0">
-                    <div class="owl-carousel service-carousel position-relative">
-                        <!-- Service card 1 -->
-                        <div class="d-flex flex-column align-items-center text-center bg-white rounded overflow-hidden pt-4">
-                            <div class="icon-box bg-light text-secondary shadow mt-2 mb-4">
-                                <i class="fa fa-2x fa-home"></i>
-                            </div>
-                            <h5 class="font-weight-bold mb-4 px-4">Residential Trash Collection</h5>
-                            <img src="img/blog-1.jpg" alt="Residential trash service">
-                        </div>
-                        <!-- Service card 2 -->
-                        <div class="d-flex flex-column align-items-center text-center bg-white rounded overflow-hidden pt-4">
-                            <div class="icon-box bg-light text-secondary shadow mt-2 mb-4">
-                                <i class="fa fa-2x fa-building"></i>
-                            </div>
-                            <h5 class="font-weight-bold mb-4 px-4">Commercial Trash Service</h5>
-                            <img src="img/blog-3.jpg" alt="Commercial trash service">
-                        </div>
-                        <!-- Service card 3 -->
-                        <div class="d-flex flex-column align-items-center text-center bg-white rounded overflow-hidden pt-4">
-                            <div class="icon-box bg-light text-secondary shadow mt-2 mb-4">
-                                <i class="fa fa-2x fa-dumpster"></i>
-                            </div>
-                            <h5 class="font-weight-bold mb-4 px-4">Dumpsters &amp; Special Pickup</h5>
-                            <img src="img/blog-2.jpg" alt="Dumpster or special pickup service">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Services End -->
-
-
-    <!-- Features / Why Choose Us Start -->
-    <div class="container-fluid py-5" id="why-us">
-        <div class="container py-5">
+    <!-- Services -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h6 class="text-secondary text-uppercase font-weight-semi-bold mb-2">Our Services</h6>
+            <h2 class="mb-4">Trash &amp; Sanitation Services</h2>
+            <p class="mb-4">
+                We offer simple, reliable trash collection options for homes and businesses. If you’re unsure
+                what service you need, our team can help you choose the right solution.
+            </p>
             <div class="row">
-                <div class="col-lg-7 pt-lg-5 pb-3">
-                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Why Choose Us</h6>
-                    <h1 class="mb-4 section-title">Reliable Local Sanitation You Can Trust</h1>
-                    <p class="mb-4">
-                        We live and work in the same communities we serve. Our routes, drivers, and office staff are focused
-                        on one thing: making sure your trash is picked up safely and on time, with clear communication if
-                        schedules change due to weather or holidays.
-                    </p>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <h1 class="text-secondary mb-2" data-toggle="counter-up">UPDATE_ROUTES</h1>
-                            <h6 class="font-weight-semi-bold mb-sm-4">Weekly Routes</h6>
+                <!-- Residential -->
+                <div class="col-md-4 mb-4">
+                    <div class="h-100 bg-white rounded shadow-sm p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-light text-secondary mr-3">
+                                <i class="fa fa-home"></i>
+                            </div>
+                            <h5 class="mb-0">Residential Trash Collection</h5>
                         </div>
-                        <div class="col-sm-4">
-                            <h1 class="text-secondary mb-2" data-toggle="counter-up">UPDATE_CUSTOMERS</h1>
-                            <h6 class="font-weight-semi-bold mb-sm-4">Customers Served</h6>
-                        </div>
-                        <div class="col-sm-4">
-                            <h1 class="text-secondary mb-2" data-toggle="counter-up">UPDATE_COMMUNITIES</h1>
-                            <h6 class="font-weight-semi-bold mb-sm-4">Communities Covered</h6>
-                        </div>
+                        <p class="mb-3">
+                            Weekly curbside trash pickup for homes, cabins, and rental properties. We’ll help you get
+                            set up with service at your address and explain pickup guidelines.
+                        </p>
+                        <ul class="pl-3 mb-3">
+                            <li>Regular weekly routes</li>
+                            <li>Simple billing options</li>
+                            <li>Friendly local drivers</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-sm btn-primary">Start Residential Service</a>
                     </div>
                 </div>
-                <div class="col-lg-5" style="min-height: 400px;">
-                    <div class="position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="img/feature.jpg" style="object-fit: cover;" alt="Garbage truck and route">
+                <!-- Commercial -->
+                <div class="col-md-4 mb-4">
+                    <div class="h-100 bg-white rounded shadow-sm p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-light text-secondary mr-3">
+                                <i class="fa fa-building"></i>
+                            </div>
+                            <h5 class="mb-0">Commercial Trash Service</h5>
+                        </div>
+                        <p class="mb-3">
+                            Trash service for small businesses, offices, and light commercial locations. We’ll work with
+                            you to set a schedule that fits your operations.
+                        </p>
+                        <ul class="pl-3 mb-3">
+                            <li>Flexible pickup schedules</li>
+                            <li>Support for multiple locations</li>
+                            <li>Clear, itemized billing</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-sm btn-primary">Commercial Service Info</a>
+                    </div>
+                </div>
+                <!-- Dumpsters / Special -->
+                <div class="col-md-4 mb-4">
+                    <div class="h-100 bg-white rounded shadow-sm p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-light text-secondary mr-3">
+                                <i class="fa fa-dumpster"></i>
+                            </div>
+                            <h5 class="mb-0">Dumpsters &amp; Special Pickup</h5>
+                        </div>
+                        <p class="mb-3">
+                            Need extra capacity for clean-outs, projects, or events? Ask us about available container
+                            sizes and special pickup options in your area.
+                        </p>
+                        <ul class="pl-3 mb-3">
+                            <li>Short-term or ongoing options</li>
+                            <li>Great for clean-ups and projects</li>
+                            <li>Call for sizes &amp; availability</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-sm btn-primary">Ask About Dumpsters</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Features End -->
+    </section>
 
-
-    <!-- Portfolio / Service Highlights Start (optional) -->
-    <div class="container-fluid bg-portfolio py-5">
-        <div class="container py-5">
-            <div class="row m-0 portfolio-container">
-                <!-- You can swap images or texts to highlight service areas, trucks, or community events -->
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="Residential route">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Residential Routes</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="#services">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="Business service">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Business &amp; Commercial</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="#services">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="Dumpsters and special pickups">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Dumpsters &amp; Special Pickup</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="#services">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- You can remove the extra 3 items below if you want fewer tiles -->
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Holiday Routes</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="#why-us">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Community Focus</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="#about">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-5.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
-                    <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Reliable Pickup</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="#services">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio End -->
-
-
-    <!-- Team Start (optional – keep or simplify later) -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row align-items-end mb-4">
-                <div class="col-lg-6">
-                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Meet Our Team</h6>
-                    <h1 class="section-title mb-3">The People Behind Your Weekly Pickup</h1>
-                </div>
-                <div class="col-lg-6">
-                    <h4 class="font-weight-normal text-muted mb-3">
-                        Our drivers, office staff, and route managers work together to keep your service running smoothly.
-                        As a local company, we take pride in knowing our customers and our routes.
-                    </h4>
-                </div>
-            </div>
+    <!-- Holiday Schedule -->
+    <section id="holiday" class="py-5">
+        <div class="container">
+            <h6 class="text-secondary text-uppercase font-weight-semi-bold mb-2">Holiday Schedule</h6>
+            <h2 class="mb-4">Route Changes for Major Holidays</h2>
+            <p class="mb-3">
+                For most major holidays, routes may run on a different day. We work to complete all pickups within
+                the same week and will communicate any changes in advance when possible.
+            </p>
             <div class="row">
-                <div class="col-12">
-                    <!-- Still uses placeholder names/images; you can update or remove carousel later -->
-                    <div class="owl-carousel team-carousel position-relative">
-                        <div class="team d-flex flex-column text-center rounded overflow-hidden">
-                            <div class="position-relative">
-                                <div class="team-img">
-                                    <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
-                                </div>
-                                <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
-                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column bg-primary text-center py-4">
-                                <h5 class="font-weight-bold">UPDATE_NAME_1</h5>
-                                <p class="text-white m-0">Driver</p>
-                            </div>
-                        </div>
-                        <div class="team d-flex flex-column text-center rounded overflow-hidden">
-                            <div class="position-relative">
-                                <div class="team-img">
-                                    <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
-                                </div>
-                                <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
-                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column bg-primary text-center py-4">
-                                <h5 class="font-weight-bold">UPDATE_NAME_2</h5>
-                                <p class="text-white m-0">Office / Billing</p>
-                            </div>
-                        </div>
-                        <div class="team d-flex flex-column text-center rounded overflow-hidden">
-                            <div class="position-relative">
-                                <div class="team-img">
-                                    <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
-                                </div>
-                                <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
-                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column bg-primary text-center py-4">
-                                <h5 class="font-weight-bold">UPDATE_NAME_3</h5>
-                                <p class="text-white m-0">Route Manager</p>
-                            </div>
-                        </div>
-                        <div class="team d-flex flex-column text-center rounded overflow-hidden">
-                            <div class="position-relative">
-                                <div class="team-img">
-                                    <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
-                                </div>
-                                <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">
-                                    <a class="btn btn-secondary btn-social mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column bg-primary text-center py-4">
-                                <h5 class="font-weight-bold">UPDATE_NAME_4</h5>
-                                <p class="text-white m-0">Owner / Operator</p>
-                            </div>
-                        </div>
+                <div class="col-md-6 mb-4">
+                    <div class="bg-light rounded p-3 h-100">
+                        <h5 class="mb-3">Typical Observed Holidays</h5>
+                        <ul class="mb-0 pl-3">
+                            <li>New Year’s Day</li>
+                            <li>Memorial Day</li>
+                            <li>Independence Day</li>
+                            <li>Labor Day</li>
+                            <li>Thanksgiving Day</li>
+                            <li>Christmas Day</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="bg-light rounded p-3 h-100">
+                        <h5 class="mb-3">How Holiday Routes Work</h5>
+                        <p class="mb-2">
+                            If your normal pickup falls on or after an observed holiday, your pickup day may shift
+                            later in the week.
+                        </p>
+                        <p class="mb-2">
+                            For specific holiday schedule details, please:
+                        </p>
+                        <ul class="mb-0 pl-3">
+                            <li>Check mailed or emailed notices</li>
+                            <li>Call our office: <strong>UPDATE_PHONE</strong></li>
+                            <li>Contact us using the form below</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Team End -->
+    </section>
 
-
-    <!-- Testimonial Start (you can add real quotes later) -->
-    <div class="container-fluid bg-testimonial py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-7 pt-lg-5 pb-5">
-                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Testimonials</h6>
-                    <h1 class="section-title text-white mb-5">What Our Customers Say</h1>
-                    <div class="owl-carousel testimonial-carousel position-relative">
-                        <div class="d-flex flex-column text-white">
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
-                                <div class="ml-3">
-                                    <h5 class="text-primary">UPDATE_CUSTOMER_1</h5>
-                                    <i>Residential Customer</i>
-                                </div>
-                            </div>
-                            <p>
-                                “Our trash is picked up on time every week, and the office is easy to reach if our schedule
-                                changes. It’s great having a local company we can rely on.”
-                            </p>
-                        </div>
-                        <div class="d-flex flex-column text-white">
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
-                                <div class="ml-3">
-                                    <h5 class="text-primary">UPDATE_CUSTOMER_2</h5>
-                                    <i>Business Owner</i>
-                                </div>
-                            </div>
-                            <p>
-                                “Billing is straightforward and the service has been very dependable for our business. Route
-                                changes and holiday schedules are communicated clearly.”
-                            </p>
-                        </div>
-                        <div class="d-flex flex-column text-white">
-                            <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
-                                <div class="ml-3">
-                                    <h5 class="text-primary">UPDATE_CUSTOMER_3</h5>
-                                    <i>Property Manager</i>
-                                </div>
-                            </div>
-                            <p>
-                                “Western Greenbrier Disposal handles multiple locations for us and keeps everything on track.
-                                They’re quick to respond when we need an extra pickup.”
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5" style="min-height: 400px;">
-                    <div class="position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="img/testimonial.jpg" style="object-fit: cover;" alt="Customer testimonial">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
-
-    <!-- Blog Start (you can hide or repurpose later if you don’t want a blog) -->
-    <div class="container-fluid pt-5">
-        <div class="container pt-5">
-            <div class="row align-items-end mb-4">
-                <div class="col-lg-6">
-                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Service Updates</h6>
-                    <h1 class="section-title mb-3">News &amp; Holiday Schedule Notices</h1>
-                </div>
-                <div class="col-lg-6">
-                    <h4 class="font-weight-normal text-muted mb-3">
-                        Use this section for route changes, holiday pickup updates, or general announcements
-                        for your customers. You can also remove this section if you don’t plan to post updates.
-                    </h4>
-                </div>
-            </div>
-            <div class="row">
-                <!-- Post 1 -->
-                <div class="col-lg-4 col-md-6 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-2">
-                        <span class="text-secondary text-uppercase font-weight-medium">Announcement</span>
-                        <span class="text-primary px-2">|</span>
-                        <span class="text-secondary text-uppercase font-weight-medium">Holiday Schedule</span>
-                    </div>
-                    <h5 class="font-weight-medium mb-2">UPDATE_TITLE_1</h5>
-                    <p class="mb-4">
-                        Short description of a schedule change, holiday route adjustment, or other important notice.
-                    </p>
-                    <a class="btn btn-sm btn-primary py-2" href="#">Read More</a>
-                </div>
-                <!-- Post 2 -->
-                <div class="col-lg-4 col-md-6 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-2">
-                        <span class="text-secondary text-uppercase font-weight-medium">Announcement</span>
-                        <span class="text-primary px-2">|</span>
-                        <span class="text-secondary text-uppercase font-weight-medium">Routes</span>
-                    </div>
-                    <h5 class="font-weight-medium mb-2">UPDATE_TITLE_2</h5>
-                    <p class="mb-4">
-                        Another optional update, such as weather-related delays or new service areas being added.
-                    </p>
-                    <a class="btn btn-sm btn-primary py-2" href="#">Read More</a>
-                </div>
-                <!-- Post 3 -->
-                <div class="col-lg-4 col-md-6 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-2">
-                        <span class="text-secondary text-uppercase font-weight-medium">Announcement</span>
-                        <span class="text-primary px-2">|</span>
-                        <span class="text-secondary text-uppercase font-weight-medium">General</span>
-                    </div>
-                    <h5 class="font-weight-medium mb-2">UPDATE_TITLE_3</h5>
-                    <p class="mb-4">
-                        General information for customers, such as reminders about what can or cannot go in the trash.
-                    </p>
-                    <a class="btn btn-sm btn-primary py-2" href="#">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Blog End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="m-0 mt-n3 display-4 text-primary">WG Disposal</h1>
-                </a>
+    <!-- FAQ -->
+    <section id="faq" class="py-5 bg-light">
+        <div class="container">
+            <h6 class="text-secondary text-uppercase font-weight-semi-bold mb-2">FAQ</h6>
+            <h2 class="mb-4">Frequently Asked Questions</h2>
+            <div class="mb-4">
+                <h5>When should I put my cart out?</h5>
                 <p>
-                    Western Greenbrier Disposal Service provides local, reliable trash collection for homes and businesses.
-                    We focus on simple service, clear communication, and keeping our communities clean.
+                    Please place your cart at the curb the night before your scheduled pickup day. Make sure it is
+                    at least 3 feet away from mailboxes, vehicles, and other obstacles, with the handle facing away from the road.
                 </p>
-                <h5 class="font-weight-semi-bold text-white mb-2">Office Hours:</h5>
-                <p class="mb-1">Mon – Fri, 8:00 AM – 4:00 PM</p>
-                <p class="mb-0">Closed Saturday &amp; Sunday</p>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5" id="footer-contact">
-                <h4 class="font-weight-semi-bold text-primary mb-4">Get In Touch</h4>
-                <p><i class="fa fa-map-marker-alt text-primary mr-2"></i>UPDATE_OFFICE_ADDRESS</p>
-                <p><i class="fa fa-phone-alt text-primary mr-2"></i>UPDATE_PHONE</p>
-                <p><i class="fa fa-envelope text-primary mr-2"></i>UPDATE_EMAIL@example.com</p>
-                <div class="d-flex justify-content-start mt-4">
-                    <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                </div>
+            <div class="mb-4">
+                <h5>What can’t go in my regular trash?</h5>
+                <p>
+                    We cannot accept items such as paint, oil, fuel, chemicals, large electronics, batteries, or tires
+                    in regular household trash. Please contact our office if you’re unsure about specific items.
+                </p>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="font-weight-semi-bold text-primary mb-4">Quick Links</h4>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="#home"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                    <a class="text-white mb-2" href="#about"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                    <a class="text-white mb-2" href="#services"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
-                    <a class="text-white mb-2" href="#why-us"><i class="fa fa-angle-right mr-2"></i>Why Choose Us</a>
-                    <a class="text-white" href="#contact"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="font-weight-semi-bold text-primary mb-4">Billing &amp; Updates</h4>
-                <p>Use our secure online portal to pay your bill or contact our office with questions about your account.</p>
-                <div class="w-100 mb-3">
-                    <a href="UPDATE_PAY_PORTAL_URL" class="btn btn-primary btn-block">Pay Online</a>
-                </div>
-                <p class="mb-0 small">
-                    For route changes or weather delays, please check the Service Updates section above or follow our social media.
+            <div class="mb-0">
+                <h5>How do I start, change, or stop service?</h5>
+                <p>
+                    You can request changes by calling our office or using the contact form below. Please include your
+                    name, service address, and account number (if you have one).
                 </p>
             </div>
         </div>
-    </div>
-    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: #3E3E4E !important;">
-        <div class="row">
-            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white">&copy;
-                    <span id="year"></span>
-                    <a href="#">Western Greenbrier Disposal Service</a>. All Rights Reserved. Designed by
-                    <a href="https://htmlcodex.com" target="_blank" rel="noopener">HTML Codex</a>
-                </p>
-            </div>
-            <div class="col-lg-6 text-center text-md-right">
-                <ul class="nav d-inline-flex">
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Privacy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Terms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#faq">FAQs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#contact">Help</a>
-                    </li>
-                </ul>
+    </section>
+
+    <!-- Contact / Service Request -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h6 class="text-secondary text-uppercase font-weight-semi-bold mb-2">Contact</h6>
+            <h2 class="mb-4">Get In Touch or Start Service</h2>
+            <div class="row">
+                <!-- Contact info -->
+                <div class="col-lg-5 mb-4">
+                    <div class="bg-light rounded p-4 h-100">
+                        <h5 class="mb-3">Office Information</h5>
+                        <p class="mb-2">
+                            <i class="fa fa-map-marker-alt text-primary mr-2"></i>
+                            <strong>Address:</strong> UPDATE_OFFICE_ADDRESS
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-phone-alt text-primary mr-2"></i>
+                            <strong>Phone:</strong> <a href="tel:UPDATE_PHONE_RAW">UPDATE_PHONE</a>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-envelope text-primary mr-2"></i>
+                            <strong>Email:</strong> <a href="mailto:UPDATE_EMAIL@example.com">UPDATE_EMAIL@example.com</a>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-clock text-primary mr-2"></i>
+                            <strong>Hours:</strong> Mon – Fri, 8:00 AM – 4:00 PM
+                        </p>
+                        <p class="mb-0 small text-muted">
+                            If you have a billing question, please include your account number if available.
+                        </p>
+                    </div>
+                </div>
+                <!-- Simple form -->
+                <div class="col-lg-7 mb-4">
+                    <div class="bg-light rounded p-4 h-100">
+                        <h5 class="mb-3">Service Request / Questions</h5>
+                        <!-- For now this can be a mailto or just a non-functional form you later connect to a backend -->
+                        <form action="mailto:UPDATE_EMAIL@example.com" method="post" enctype="text/plain">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label>Your Name</label>
+                                    <input type="text" class="form-control" name="Name" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" name="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Service Address</label>
+                                <input type="text" class="form-control" name="Service Address" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label>Phone</label>
+                                    <input type="text" class="form-control" name="Phone">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Account Number (if you have one)</label>
+                                    <input type="text" class="form-control" name="Account Number">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>How can we help?</label>
+                                <textarea class="form-control" rows="4" name="Message" placeholder="New service, change to existing service, billing question, etc." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Send Request
+                            </button>
+                            <p class="mt-2 small text-muted">
+                                Submitting this form will open your email client. If that doesn’t work on your device,
+                                please call our office directly.
+                            </p>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Footer End -->
+    </section>
 
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <p class="mb-1 mb-md-0">
+                &copy; <span id="year"></span> Western Greenbrier Disposal Service. All rights reserved.
+            </p>
+            <p class="mb-0 small">
+                Simple, local trash collection for Western Greenbrier &amp; surrounding communities.
+            </p>
+        </div>
+    </footer>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-primary px-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <!-- Back to Top (optional, from template) -->
+    <a href="#home" class="btn btn-primary px-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-
-    <!-- JavaScript Libraries -->
+    <!-- JS Libraries (same as template, fine to keep) -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -761,14 +366,10 @@
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
+    <!-- Template JS (for back-to-top, etc.) -->
     <script src="js/main.js"></script>
 
-    <!-- Simple year auto-update -->
+    <!-- Auto year -->
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>

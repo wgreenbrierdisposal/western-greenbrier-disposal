@@ -1,190 +1,284 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Western Greenbrier Disposal Service</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
-    <style>
-        body { font-family: 'Roboto', sans-serif; }
-        
-        /* Top Bar styling */
-        .top-bar { background-color: #0d2e5c; color: white; padding: 10px 0; font-size: 0.9rem; }
-        .top-bar a { color: white; text-decoration: none; margin-left: 15px; }
-        
-        /* Navigation styling */
-        .navbar { box-shadow: 0 2px 4px rgba(0,0,0,.1); padding: 15px 0; background: white; }
-        .navbar-brand { font-weight: bold; font-size: 1.5rem; color: #0d2e5c !important; }
-        .nav-link { font-weight: 500; color: #333 !important; margin-left: 15px; }
-        .nav-link:hover { color: #007bff !important; }
-        .btn-quote { background-color: #28a745; color: white; font-weight: bold; border-radius: 20px; padding: 8px 25px; }
-        .btn-quote:hover { background-color: #218838; color: white; }
-
-        /* Hero Section (The big image at the top) */
-        .hero-section {
-            /* This URL is a placeholder professional trash truck image. You can change this later. */
-            background: linear-gradient(rgba(13, 46, 92, 0.7), rgba(13, 46, 92, 0.7)), url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-        }
-        .hero-section h1 { font-size: 3.5rem; font-weight: 700; margin-bottom: 20px; }
-        .hero-section p { font-size: 1.25rem; margin-bottom: 30px; opacity: 0.9; }
-
-        /* Services Section */
-        .service-card { border: none; transition: transform 0.3s; text-align: center; padding: 30px 20px; background: #f8f9fa; border-radius: 8px; height: 100%; }
-        .service-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); background: white; }
-        .icon-box { font-size: 3rem; color: #007bff; margin-bottom: 20px; }
-        
-        /* Call to Action Bar */
-        .cta-bar { background-color: #28a745; color: white; padding: 40px 0; text-align: center; }
-        
-        /* Footer */
-        footer { background-color: #333; color: #ccc; padding: 40px 0 20px; }
-        footer h5 { color: white; margin-bottom: 20px; }
-        footer a { color: #ccc; text-decoration: none; display: block; margin-bottom: 10px; }
-        footer a:hover { color: white; }
-    </style>
+  <meta charset="utf-8">
+  <title>Western Greenbrier Disposal Service | Residential & Commercial Trash Collection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Reliable residential and commercial trash collection for Western Greenbrier and surrounding areas. Easy online bill pay and simple service signup.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <div class="top-bar">
-        <div class="container d-flex justify-content-between align-items-center">
-            <span><i class="fas fa-map-marker-alt"></i> Serving Rainelle & Greenbrier County</span>
-            <div>
-                <a href="tel:3044388051"><i class="fas fa-phone-alt"></i> (304) 438-8051</a>
-                <a href="mailto:info@westerngreenbrier.com"><i class="fas fa-envelope"></i> Email Us</a>
-            </div>
-        </div>
+  <!-- Top info bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <span>Western Greenbrier Disposal Service</span>
+      <span>123 Example Road • Rupert, WV 25984</span>
+      <span>Mon – Fri • 8:00 am – 4:00 pm</span>
+      <span><a href="tel:18005551234">(800) 555-1234</a></span>
     </div>
+  </div>
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">WESTERN GREENBRIER <span style="font-weight:300; font-size: 0.8em; display:block; line-height:1;">DISPOSAL SERVICE</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#residential">Residential</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#commercial">Commercial</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item ms-3">
-                        <a href="tel:3044388051" class="btn btn-quote">Start Service</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <!-- Replace with your logo image if you have one -->
+        <!-- <img src="img/wg-logo.png" alt="Western Greenbrier Disposal Service"> -->
+        <span class="logo-text">Western Greenbrier Disposal</span>
+      </div>
 
-    <section class="hero-section">
-        <div class="container">
-            <h1>Local. Reliable. Family Owned.</h1>
-            <p>Providing trusted waste management services to Rainelle and surrounding areas for over 50 years.</p>
-            <a href="#contact" class="btn btn-primary btn-lg px-5 me-2">Get a Quote</a>
-            <a href="#services" class="btn btn-outline-light btn-lg px-5">Our Services</a>
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#schedule">Holiday Schedule</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-ctas">
+        <a class="btn btn-outline" href="https://example-pay-portal.com" target="_blank" rel="noopener">Pay Online</a>
+        <a class="btn btn-primary" href="#contact">Order Service</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main id="home">
+
+    <!-- Hero / Intro -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Residential &amp; Commercial</p>
+          <h1>Sanitation Service for Western Greenbrier &amp; Surrounding Areas</h1>
+          <p class="hero-subtitle">
+            Family-style service with dependable weekly trash collection, dumpster options,
+            and simple billing. We keep your home and business clean so you don’t have to think about it.
+          </p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="https://example-pay-portal.com" target="_blank" rel="noopener">
+              Pay Your Bill
+            </a>
+            <a class="btn btn-outline" href="#contact">
+              Start Service
+            </a>
+          </div>
         </div>
+        <div class="hero-image">
+          <!-- Replace this with your own photo of a truck / can / route if you have one -->
+          <div class="hero-photo-placeholder">
+            <span>Photo of truck / route here</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="services" class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold text-dark">Our Services</h2>
-                <p class="text-muted">Professional waste solutions for home and business.</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="service-card" id="residential">
-                        <div class="icon-box"><i class="fas fa-home"></i></div>
-                        <h3>Residential Trash</h3>
-                        <p>Weekly curbside pickup you can count on. We offer affordable monthly and quarterly rates for households in Rainelle.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card" id="commercial">
-                        <div class="icon-box"><i class="fas fa-building"></i></div>
-                        <h3>Commercial Dumpsters</h3>
-                        <p>Reliable waste collection for businesses. Various dumpster sizes available with flexible pickup schedules.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card">
-                        <div class="icon-box"><i class="fas fa-truck-loading"></i></div>
-                        <h3>Special Pickups</h3>
-                        <p>Need to get rid of bulky items, furniture, or construction debris? Call us to schedule a special haul-away.</p>
-                    </div>
-                </div>
-            </div>
+    <!-- About / Company intro -->
+    <section class="section" id="about">
+      <div class="container split">
+        <div>
+          <h2>Local, Reliable Waste Collection</h2>
+          <p>
+            Western Greenbrier Disposal Service is a locally operated trash collection company
+            serving homes and businesses across Western Greenbrier County and nearby communities.
+          </p>
+          <p>
+            We focus on simple, reliable service: consistent pickup schedules, clear communication,
+            and billing options that work for busy families and business owners.
+          </p>
+          <p>
+            Whether you’re setting up service at a new home, managing rentals, or running a business,
+            we’re here to help you keep things clean and running smoothly.
+          </p>
         </div>
+        <div class="card">
+          <h3>Why Customers Choose Us</h3>
+          <ul class="checklist">
+            <li>Consistent, on-time pickup</li>
+            <li>Friendly, local customer support</li>
+            <li>Simple billing and online payments</li>
+            <li>Residential and commercial options</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 mb-4">
-                    <h2 class="fw-bold mb-4">Contact Us</h2>
-                    <p class="lead">Ready to start service? Give us a call or stop by our office.</p>
-                    
-                    <div class="d-flex align-items-start mb-3">
-                        <div class="me-3 text-primary fs-4"><i class="fas fa-map-marked-alt"></i></div>
-                        <div>
-                            <h5 class="fw-bold">Our Location</h5>
-                            <p>311 Oregon Ave (PO Box 652)<br>Rainelle, WV 25962</p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex align-items-start mb-3">
-                        <div class="me-3 text-primary fs-4"><i class="fas fa-phone"></i></div>
-                        <div>
-                            <h5 class="fw-bold">Phone Number</h5>
-                            <p class="mb-0"><a href="tel:3044388051" class="text-decoration-none text-dark">(304) 438-8051</a></p>
-                            <small class="text-muted">Mon-Fri: 8am - 4pm</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div style="width: 100%; height: 300px; background-color: #ddd; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                        <iframe width="100%" height="300" frameborder="0" style="border:0; border-radius: 8px;" src="https://www.google.com/maps?q=311+Oregon+Ave,+Rainelle,+WV+25962&output=embed"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Bill Pay Highlight -->
+    <section class="section section-accent" id="billpay">
+      <div class="container center">
+        <h2>Convenient Online Bill Pay</h2>
+        <p>
+          Skip the stamps and phone calls. Use our secure online payment option to pay your bill
+          in just a few clicks — anytime, from any device.
+        </p>
+        <a class="btn btn-primary btn-large" href="https://example-pay-portal.com" target="_blank" rel="noopener">
+          Pay Online
+        </a>
+      </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <h5 class="text-uppercase">Western Greenbrier</h5>
-                    <p class="small">Your trusted partner for clean and reliable waste disposal in Greenbrier County.</p>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <h5 class="text-uppercase">Quick Links</h5>
-                    <a href="#">Home</a>
-                    <a href="#services">Services</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <h5 class="text-uppercase">Contact</h5>
-                    <p class="small"><i class="fas fa-phone me-2"></i> (304) 438-8051</p>
-                    <p class="small"><i class="fas fa-map-marker-alt me-2"></i> Rainelle, WV</p>
-                </div>
-            </div>
-            <div class="text-center pt-3 border-top border-secondary mt-3">
-                <p class="small mb-0">&copy; 2025 Western Greenbrier Disposal Service. All rights reserved.</p>
-            </div>
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <h2>Services We Offer</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3 id="residential">Residential Trash Collection</h3>
+            <p>
+              Weekly curbside pickup for homes, cabins, and rental properties.
+              We’ll help you choose the cart size and pickup schedule that fits your needs.
+            </p>
+          </div>
+          <div class="card">
+            <h3 id="commercial">Commercial Trash Service</h3>
+            <p>
+              Flexible service for small businesses, offices, and light commercial locations,
+              with dependable routes and straightforward billing.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Roll-Off / Special Services</h3>
+            <p>
+              Need temporary service for clean-outs, projects, or special events?
+              Ask us about larger containers and short-term options in your area.
+            </p>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Holiday Schedule -->
+    <section class="section section-light" id="schedule">
+      <div class="container split">
+        <div>
+          <h2>Holiday Schedule</h2>
+          <p>
+            Route changes for major holidays are posted in advance so you always know when
+            to put your cart out. If a pickup is delayed, we make every effort to service
+            you within the same week.
+          </p>
+          <p>
+            Typical observed holidays may include: New Year’s Day, Memorial Day, Independence Day,
+            Labor Day, Thanksgiving, and Christmas.
+          </p>
+        </div>
+        <div class="card">
+          <h3>2025 Observed Holidays</h3>
+          <ul>
+            <li>New Year’s Day</li>
+            <li>Memorial Day</li>
+            <li>Independence Day</li>
+            <li>Labor Day</li>
+            <li>Thanksgiving Day</li>
+            <li>Christmas Day</li>
+          </ul>
+          <p class="small">
+            <strong>Note:</strong> Actual schedule may vary. Please call our office or check notices
+            for the most current information.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ (short version for now) -->
+    <section class="section" id="faq">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>When should I put my cart out?</h3>
+          <p>
+            Please place your cart at the curb the night before your scheduled pickup day,
+            with the handle facing away from the road and at least 3 feet from mailboxes,
+            vehicles, and other obstacles.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>What items cannot go in my trash?</h3>
+          <p>
+            We cannot accept household chemicals, paint, oil, fuel, batteries, tires, or
+            large electronics in regular household trash. Contact our office if you’re unsure
+            about a specific item.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I start, change, or stop service?</h3>
+          <p>
+            Use the form below, give us a call, or stop by our office during business hours
+            and we’ll be happy to help.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact + Map -->
+    <section class="section section-light" id="contact">
+      <div class="container split">
+        <div>
+          <h2>Contact &amp; Service Requests</h2>
+          <p>
+            Have questions about your bill, need to start service, or want to update an account?
+            Reach out and our team will get you taken care of.
+          </p>
+          <ul class="contact-list">
+            <li><strong>Phone:</strong> <a href="tel:18005551234">(800) 555-1234</a></li>
+            <li><strong>Email:</strong> <a href="mailto:info@wgdisposal.com">info@wgdisposal.com</a></li>
+            <li><strong>Office:</strong> 123 Example Road, Rupert, WV 25984</li>
+            <li><strong>Hours:</strong> Mon – Fri, 8:00 am – 4:00 pm</li>
+          </ul>
+
+          <div class="contact-buttons">
+            <a class="btn btn-primary" href="mailto:info@wgdisposal.com?subject=New%20Service%20Request">
+              Request New Service
+            </a>
+            <a class="btn btn-outline" href="mailto:info@wgdisposal.com?subject=Account%20or%20Billing%20Question">
+              Billing / Account Question
+            </a>
+          </div>
+
+          <p class="small">
+            In the future, you can replace these buttons with an online form or a login
+            to your payment/route system.
+          </p>
+        </div>
+
+        <div class="map-card">
+          <h3>Service Area</h3>
+          <p>
+            We serve Western Greenbrier County and select surrounding communities.
+            Call our office to confirm service at your address.
+          </p>
+          <!-- You can replace this with a Google Maps embed later -->
+          <div class="map-placeholder">
+            <span>Map embed goes here</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Western Greenbrier Disposal Service. All rights reserved.</p>
+      <p class="small">Trash &amp; sanitation services for Western Greenbrier County and surrounding areas.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+
+    navToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('nav-open');
+    });
+
+    // Current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

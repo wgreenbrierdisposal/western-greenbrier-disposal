@@ -8,8 +8,33 @@
     <meta content="trash, garbage, sanitation, residential trash, commercial trash, dumpster, Western Greenbrier WV" name="keywords">
     <meta content="Local, reliable residential and commercial trash collection with simple billing and convenient online payment options for Western Greenbrier and surrounding areas." name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <!-- LocalBusiness / SEO Schema (recommended) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WasteManagement",
+      "name": "Western Greenbrier Disposal Service",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "311 Oregon Avenue",
+        "addressLocality": "Rainelle",
+        "addressRegion": "WV",
+        "postalCode": "25962",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-304-438-8051",
+      "areaServed": "Western Greenbrier County, WV",
+      "url": "https://wgdisposal.com"
+    }
+    </script>
+
+     <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -26,16 +51,18 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body id="home">
+<!-- Scrollspy enabled for active nav highlighting -->
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="80">
+
     <!-- Top Bar -->
     <div class="container-fluid bg-dark text-white py-2 d-none d-md-block">
         <div class="container d-flex justify-content-between">
             <div>
                 <i class="fa fa-envelope text-primary mr-2"></i>
-                <small>wgreenbrierdisposal@gmail.com</small>
+                <small><a class="text-white" href="mailto:wgreenbrierdisposal@gmail.com">wgreenbrierdisposal@gmail.com</a></small>
                 <span class="mx-2">|</span>
                 <i class="fa fa-phone-alt text-primary mr-2"></i>
-                <small>(304) 438-8051</small>
+                <small><a class="text-white" href="tel:13044388051">(304) 438-8051</a></small>
             </div>
             <div>
                 <small>Serving Western Greenbrier &amp; surrounding areas</small>
@@ -49,7 +76,7 @@
             <a href="#home" class="navbar-brand">
                 <h1 class="m-0 text-primary" style="font-size: 1.6rem;">Western Greenbrier Disposal Service</h1>
             </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
@@ -74,9 +101,9 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 mb-4 mb-lg-0">
                     <h5 class="text-uppercase font-weight-semi-bold mb-2">Residential &amp; Commercial Sanitation</h5>
-                    <h1 class="display-4 mb-3">Bag and Dumpster Trash Collection </h1>
+                    <h1 class="display-4 mb-3">Bag and Dumpster Trash Collection</h1>
                     <p class="mb-4">
-                        WGDS is a locally owned and operated waste management company offering residential and 
+                        WGDS is a locally owned and operated waste management company offering residential and
                         commercial garbage collection and dumpster rentals.
                     </p>
                     <div class="d-flex flex-wrap">
@@ -97,7 +124,7 @@
                         </p>
                         <p class="mb-2">
                             <i class="fa fa-phone-alt text-primary mr-2"></i>
-                            <strong>Phone:</strong> (304) 438-8051
+                            <strong>Phone:</strong> <a href="tel:13044388051">(304) 438-8051</a>
                         </p>
                         <p class="mb-2">
                             <i class="fa fa-clock text-primary mr-2"></i>
@@ -159,8 +186,8 @@
                         </p>
                         <ul class="pl-3 mb-3">
                             <li>Flexible pickup schedules</li>
-                            <li>Mulitple Dumpster Sizes Available</li>
-                            <li>Automated Billing Options</li>
+                            <li>Multiple dumpster sizes available</li>
+                            <li>Automated billing options</li>
                         </ul>
                         <a href="#contact" class="btn btn-sm btn-primary">Commercial Service Inquiry</a>
                     </div>
@@ -225,7 +252,7 @@
                         </p>
                         <ul class="mb-0 pl-3">
                             <li>Check mailed or emailed notices</li>
-                            <li>Call our office: <strong>(304) 438-8051</strong></li>
+                            <li>Call our office: <strong><a href="tel:13044388051">(304) 438-8051</a></strong></li>
                             <li>Contact us using the form below</li>
                         </ul>
                     </div>
@@ -243,7 +270,7 @@
                 <h5>When should I put my trash out?</h5>
                 <p>
                     Please place your bags at the curb the night before your scheduled pickup day. Make sure bags are not overloaded and are visible from the road.
-                    Any Items not bagged will not be collected.
+                    Any items not bagged will not be collected.
                 </p>
             </div>
             <div class="mb-4">
@@ -278,9 +305,12 @@
                         When you click “Go to Secure Payment”, you’ll be sent to our CardPointe payment page to
                         complete your payment.
                     </p>
+                    <p class="mb-2 small text-muted">
+                        You will be redirected to CardPointe’s secure page. WGDS does not store card or bank details.
+                    </p>
                     <p class="mb-0 small text-muted">
-                        Payments are made using a 3rd Party secure online payment portal:<br>
-                        <code>Available Payment Methods: ACH, Visa, Mastercard, Discover, & American Express</code>
+                        Payments are made using a 3rd party secure online payment portal:<br>
+                        <code>Available Payment Methods: ACH, Visa, Mastercard, Discover, &amp; American Express</code>
                     </p>
                 </div>
                 <div class="col-lg-6 mb-4">
@@ -295,7 +325,7 @@
                                 <label for="invoiceTotal">Total Amount Due</label>
                                 <input type="number" step="0.01" min="0" class="form-control" id="invoiceTotal" required>
                             </div>
-                            <button type="submit" class="btn btn-primary">
+                            <button type="submit" class="btn btn-primary" aria-label="Go to secure payment portal">
                                 Go to Secure Payment
                             </button>
                             <p id="pay-error" class="mt-2 small text-danger" style="display:none;"></p>
@@ -333,52 +363,84 @@
                             <strong>Hours:</strong> Mon – Fri, 9:00 AM – 3:00 PM<br>
                             <span class="ml-4">Saturday &amp; Sunday: Closed</span>
                         </p>
-                        <p class="mb-0 small text-muted">
+
+                        <!-- Google Maps Embed + Open link -->
+                        <div class="mt-3">
+                            <div class="rounded overflow-hidden" style="height: 220px;">
+                                <iframe
+                                    title="WGDS Office Location"
+                                    src="https://www.google.com/maps?q=311%20Oregon%20Avenue,%20Rainelle,%20WV%2025962&output=embed"
+                                    width="100%" height="220" style="border:0;"
+                                    allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            <p class="mt-2 mb-0 small">
+                                <a href="https://www.google.com/maps?q=311%20Oregon%20Avenue,%20Rainelle,%20WV%2025962" target="_blank" rel="noopener">
+                                    Open in Google Maps
+                                </a>
+                            </p>
+                        </div>
+
+                        <p class="mt-3 mb-0 small text-muted">
                             If you have a billing question, please include your account number if available.
                         </p>
                     </div>
                 </div>
-                <!-- Simple form -->
+
+                <!-- Real form (Formspree) -->
                 <div class="col-lg-7 mb-4">
                     <div class="bg-light rounded p-4 h-100">
                         <h5 class="mb-3">Service Request / Questions</h5>
-                        <!-- For now this uses mailto; later you can hook it to a backend or form service -->
-                        <form action="mailto:wgreenbrierdisposal@gmail.com" method="post" enctype="text/plain">
+
+                        <!-- Replace REPLACE_ME with your Formspree endpoint -->
+                        <form id="contact-form" action="https://formspree.io/f/REPLACE_ME" method="POST">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label>Your Name</label>
-                                    <input type="text" class="form-control" name="Name" required>
+                                    <input type="text" class="form-control" name="name" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label>Email</label>
-                                    <input type="email" class="form-control" name="Email">
+                                    <input type="email" class="form-control" name="_replyto" placeholder="optional">
                                 </div>
                             </div>
+
                             <div class="form-group">
                                 <label>Service Address</label>
-                                <input type="text" class="form-control" name="Service Address" required>
+                                <input type="text" class="form-control" name="service_address" required>
                             </div>
+
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label>Phone</label>
-                                    <input type="text" class="form-control" name="Phone">
+                                    <input type="text" class="form-control" name="phone" placeholder="optional">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label>Account Number (if you have one)</label>
-                                    <input type="text" class="form-control" name="Account Number">
+                                    <input type="text" class="form-control" name="account_number" placeholder="optional">
                                 </div>
                             </div>
+
                             <div class="form-group">
                                 <label>How can we help?</label>
-                                <textarea class="form-control" rows="4" name="Message" placeholder="New service, change to existing service, billing question, etc." required></textarea>
+                                <textarea class="form-control" rows="4" name="message"
+                                    placeholder="New service, change to existing service, billing question, etc." required></textarea>
                             </div>
+
+                            <!-- Honeypot (spam trap) -->
+                            <input type="text" name="_gotcha" style="display:none">
+
                             <button type="submit" class="btn btn-primary">
                                 Send Request
                             </button>
-                            <p class="mt-2 small text-muted">
-                                Submitting this form will open your email client. If that doesn’t work on your device,
-                                please call our office directly.
+
+                            <p class="mt-2 small text-muted mb-0">
+                                This sends securely to our office email. If you need urgent help, please call
+                                <a href="tel:13044388051">(304) 438-8051</a>.
                             </p>
+
+                            <p id="contact-status" class="mt-2 small" style="display:none;"></p>
                         </form>
                     </div>
                 </div>
@@ -389,9 +451,14 @@
     <!-- Footer -->
     <footer class="bg-dark text-white py-3">
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-            <p class="mb-1 mb-md-0">
-                &copy; <span id="year"></span> Western Greenbrier Disposal Service. All rights reserved.
-            </p>
+            <div>
+                <p class="mb-1 mb-md-0">
+                    &copy; <span id="year"></span> Western Greenbrier Disposal Service. All rights reserved.
+                </p>
+                <p class="mb-0 small text-muted">
+                    Locally owned and operated in Greenbrier County, West Virginia.
+                </p>
+            </div>
             <p class="mb-0 small">
                 Simple, local trash collection for Western Greenbrier &amp; surrounding communities.
             </p>
@@ -414,7 +481,7 @@
     <!-- Template JS (for back-to-top, etc.) -->
     <script src="js/main.js"></script>
 
-    <!-- Auto year + Pay form logic -->
+    <!-- Auto year + Pay form logic + Contact form submit -->
     <script>
         // Footer year
         document.getElementById('year').textContent = new Date().getFullYear();
@@ -424,36 +491,80 @@
         const payError = document.getElementById('pay-error');
         const basePayUrl = 'https://westerngreenbri.securepayments.cardpointe.com/pay';
 
-        payForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            payError.style.display = 'none';
-            payError.textContent = '';
+        if (payForm) {
+            payForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                payError.style.display = 'none';
+                payError.textContent = '';
 
-            const invoice = document.getElementById('invoiceNumber').value.trim();
-            const total = document.getElementById('invoiceTotal').value.trim();
+                const invoice = document.getElementById('invoiceNumber').value.trim();
+                const totalRaw = document.getElementById('invoiceTotal').value.trim();
 
-            if (!invoice || !total) {
-                payError.textContent = 'Please enter both your invoice number and total amount due.';
-                payError.style.display = 'block';
-                return;
-            }
+                if (!invoice || !totalRaw) {
+                    payError.textContent = 'Please enter both your invoice number and total amount due.';
+                    payError.style.display = 'block';
+                    return;
+                }
 
-            // Very basic numeric check for total
-            if (isNaN(total) || Number(total) <= 0) {
-                payError.textContent = 'Please enter a valid number for the total amount.';
-                payError.style.display = 'block';
-                return;
-            }
+                const totalNum = Number(totalRaw);
+                if (!Number.isFinite(totalNum) || totalNum <= 0) {
+                    payError.textContent = 'Please enter a valid number for the total amount.';
+                    payError.style.display = 'block';
+                    return;
+                }
 
-            const url = basePayUrl
-                + '?invoice=' + encodeURIComponent(invoice)
-                + '&total=' + encodeURIComponent(total)
-                + '&billCountry=US';
+                const url = basePayUrl
+                    + '?invoice=' + encodeURIComponent(invoice)
+                    + '&total=' + encodeURIComponent(totalNum.toFixed(2))
+                    + '&billCountry=US';
 
-            window.location.href = url;
-        });
+                window.location.href = url;
+            });
+        }
+
+        // Contact form: AJAX submit to Formspree (no redirect)
+        const contactForm = document.getElementById('contact-form');
+        const contactStatus = document.getElementById('contact-status');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', async function (e) {
+                e.preventDefault();
+
+                if (contactStatus) {
+                    contactStatus.style.display = 'block';
+                    contactStatus.className = 'mt-2 small text-muted';
+                    contactStatus.textContent = 'Sending…';
+                }
+
+                try {
+                    const formData = new FormData(contactForm);
+                    const res = await fetch(contactForm.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: { 'Accept': 'application/json' }
+                    });
+
+                    if (res.ok) {
+                        contactForm.reset();
+                        if (contactStatus) {
+                            contactStatus.className = 'mt-2 small text-success';
+                            contactStatus.textContent = 'Thank you — we received your request and will respond as soon as possible.';
+                        }
+                    } else {
+                        if (contactStatus) {
+                            contactStatus.className = 'mt-2 small text-danger';
+                            contactStatus.textContent = 'Sorry — something went wrong. Please call (304) 438-8051.';
+                        }
+                    }
+                } catch (err) {
+                    if (contactStatus) {
+                        contactStatus.className = 'mt-2 small text-danger';
+                        contactStatus.textContent = 'Network error. Please call (304) 438-8051.';
+                    }
+                }
+            });
+        }
     </script>
 </body>
 
 </html>
-

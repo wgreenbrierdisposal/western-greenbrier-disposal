@@ -69,3 +69,26 @@ section.bg-primary {
 .bg-light {
   background-color: #f4f6f5 !important;
 }
+/* ===== HERO BACKGROUND IMAGE ===== */
+.hero-banner {
+  position: relative;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Dark overlay so text stays readable */
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+/* Keep hero content above overlay */
+.hero-banner .container {
+  position: relative;
+  z-index: 2;
+}

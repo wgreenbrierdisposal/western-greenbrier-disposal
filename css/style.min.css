@@ -99,3 +99,6 @@ section.bg-primary {
   position: relative;
   z-index: 2; /* keep text above overlay */
 }
+.hero-banner .display-4 {
+  color: #ffffff !important;
+}

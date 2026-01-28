@@ -59,14 +59,15 @@ a:hover {
   color: #163d80;
 }
 /* Make hero headings white */
- h1,h5,{
-
+.hero-banner h1,
+.hero-banner h2,
+.hero-banner h3,
+.hero-banner h4,
+.hero-banner h5,
+.hero-banner p {
   color: #ffffff !important;
 }
 
-/* Headings stay neutral */
-  h2, h3, h4 {
-  color: #222;
 }
 section.bg-primary {
   background: linear-gradient(135deg, #1f5f4a, #163f33);

@@ -10217,5 +10217,19 @@ section.bg-primary {
   position: relative;
   z-index: 2; /* keep text above overlay */
 }
+/* White text for dark sections */
+.text-white-all,
+.text-white-all h1,
+.text-white-all h2,
+.text-white-all h3,
+.text-white-all h4,
+.text-white-all h5,
+.text-white-all h6,
+.text-white-all p,
+.text-white-all a,
+.text-white-all li,
+.text-white-all span {
+  color: #ffffff !important;
+}
 
 

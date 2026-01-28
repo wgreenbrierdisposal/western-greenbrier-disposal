@@ -10136,7 +10136,6 @@ h6,
 
 :root {
   --wgds-green: #1f5f4a;
-  --wgds-blue: #1e4fa3;
   --wgds-dark: #2b2b2b;
 }
 
@@ -10161,7 +10160,7 @@ h6,
 
 /* Accent color (blue) */
 .text-secondary {
-  color: var(--wgds-blue) !important;
+  color: var(--wgds-green) !important;
 }
 
 /* Icons */
@@ -10177,7 +10176,7 @@ h6,
 
 /* Links */
 a {
-  color: var(--wgds-blue);
+  color: var(--wgds-green);
 }
 
 a:hover {

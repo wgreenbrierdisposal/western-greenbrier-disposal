@@ -10129,3 +10129,70 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+/* ============================
+   WGDS Brand Color Overrides
+   Dark Green + Blue
+   ============================ */
+
+:root {
+  --wgds-green: #1f5f4a;
+  --wgds-blue: #1e4fa3;
+  --wgds-dark: #2b2b2b;
+}
+
+/* Primary elements (was yellow) */
+.bg-primary {
+  background-color: var(--wgds-green) !important;
+}
+
+.text-primary {
+  color: var(--wgds-green) !important;
+}
+
+.btn-primary {
+  background-color: var(--wgds-green);
+  border-color: var(--wgds-green);
+}
+
+.btn-primary:hover {
+  background-color: #184c3c;
+  border-color: #184c3c;
+}
+
+/* Accent color (blue) */
+.text-secondary {
+  color: var(--wgds-blue) !important;
+}
+
+/* Icons */
+.fa,
+.icon-box {
+  color: var(--wgds-green);
+}
+
+/* Top bar + footer */
+.bg-dark {
+  background-color: var(--wgds-dark) !important;
+}
+
+/* Links */
+a {
+  color: var(--wgds-blue);
+}
+
+a:hover {
+  color: #163d80;
+}
+
+/* Headings stay neutral */
+h1, h2, h3, h4, h5 {
+  color: #222;
+}
+section.bg-primary {
+  background: linear-gradient(135deg, #1f5f4a, #163f33);
+}
+.bg-light {
+  background-color: #f4f6f5 !important;
+}
+
+

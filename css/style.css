@@ -10234,5 +10234,16 @@ section.bg-primary {
 .hero-banner .text-green{
   color: #1f5f4a !important;  /* dark green */
 }
+/* ===== Navbar Logo ===== */
+.navbar-logo {
+  height: 42px;        /* adjust as needed */
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 34px;
+  }
+}
 
 

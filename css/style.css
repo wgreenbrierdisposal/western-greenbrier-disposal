@@ -10231,5 +10231,9 @@ section.bg-primary {
 .text-white-all span {
   color: #ffffff !important;
 }
+/* Allow green text inside hero */
+.hero-banner .text-green {
+  color: #1f5f4a !important; /* your WGDS green */
+}
 
 

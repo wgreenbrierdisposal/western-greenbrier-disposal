@@ -69,13 +69,15 @@ section.bg-primary {
 .bg-light {
   background-color: #f4f6f5 !important;
 }
-/* ===== HERO BACKGROUND IMAGE ===== */
+/* ===== Hero Background Image ===== */
 .hero-banner {
-  position: relative;
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 60vh;      /* ensures visible height */
+  position: relative;
+  color: #ffffff;        /* ensures text shows on image */
 }
 
 /* Dark overlay so text stays readable */
@@ -83,12 +85,11 @@ section.bg-primary {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.4); /* semi-dark overlay */
   z-index: 1;
 }
 
-/* Keep hero content above overlay */
 .hero-banner .container {
   position: relative;
-  z-index: 2;
+  z-index: 2; /* keep text above overlay */
 }

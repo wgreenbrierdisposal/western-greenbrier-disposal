@@ -58,9 +58,14 @@ a {
 a:hover {
   color: #163d80;
 }
+/* Make hero headings white */
+ h1,h5,{
+
+  color: #ffffff !important;
+}
 
 /* Headings stay neutral */
-h1, h2, h3, h4, h5 {
+  h2, h3, h4 {
   color: #222;
 }
 section.bg-primary {

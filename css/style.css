@@ -10194,5 +10194,29 @@ section.bg-primary {
 .bg-light {
   background-color: #f4f6f5 !important;
 }
+/* ===== Hero Background Image ===== */
+.hero-banner {
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 60vh;      /* ensures visible height */
+  position: relative;
+  color: #ffffff;        /* ensures text shows on image */
+}
+
+/* Dark overlay so text stays readable */
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* semi-dark overlay */
+  z-index: 1;
+}
+
+.hero-banner .container {
+  position: relative;
+  z-index: 2; /* keep text above overlay */
+}
 
 

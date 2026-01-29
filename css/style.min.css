@@ -81,7 +81,6 @@ section.bg-primary {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 45vh;   /* ensures visible height */
-   max-height: 400px;
   position: relative;
   color: #ffffff;        /* ensures text shows on image */
 }

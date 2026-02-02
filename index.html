@@ -30,12 +30,12 @@
     }
     </script>
 
-     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" href="/favicon.ico">
-    <link rel="manifest" href="/site.webmanifest">
+        <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="manifest" href="img/site.webmanifest">
+    
 
 
     <!-- Google Web Fonts -->
@@ -91,7 +91,7 @@
                     <a href="#home" class="nav-item nav-link active">Home</a>
                     <a href="#services" class="nav-item nav-link">Services</a>
                     <a href="#pay" class="nav-item nav-link">Pay Online</a>
-                    <a href="#holiday" class="nav-item nav-link">Holiday Schedule</a>
+                    <a href="#updates" class="nav-item nav-link">Service Updates</a>
                     <a href="#faq" class="nav-item nav-link">FAQ</a>
                     <a href="#contact" class="nav-item nav-link">Contact</a>
                 </div>
@@ -273,88 +273,305 @@
         </div>
     </section>
     
-    <!-- Holiday Schedule -->
-    <section id="holiday" class="py-5">
-        <div class="container">
-            <h6 class="text-secondary text-uppercase font-weight-semi-bold mb-2">Holiday Schedule</h6>
-            <h2 class="mb-4">Route Changes for Major Holidays</h2>
-            <p class="mb-3">
-                For most major holidays, routes may run on a different day. We work to complete all pickups within
-                the same week and will communicate any changes in advance when possible.
-            </p>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="bg-light rounded p-3 h-100">
-                        <h5 class="mb-3">Typical Observed Holidays</h5>
-                        <ul class="mb-0 pl-3">
-                            <li>New Year’s Day</li>
-                            <li>Memorial Day</li>
-                            <li>Independence Day</li>
-                            <li>Labor Day</li>
-                            <li>Thanksgiving Day</li>
-                            <li>Christmas Day</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="bg-light rounded p-3 h-100">
-                        <h5 class="mb-3">How Holiday Routes Work</h5>
-                        <p class="mb-2">
-                            If your normal pickup falls on or after an observed holiday, your pickup day may shift
-                            later in the week.
-                        </p>
-                        <p class="mb-2">
-                            For specific holiday schedule details, please:
-                        </p>
-                        <ul class="mb-0 pl-3">
-                            <li>Check mailed or emailed notices</li>
-                            <li>Call our office: <strong><a href="tel:13044388051">(304) 438-8051</a></strong></li>
-                            <li>Contact us using the form below</li>
-                        </ul>
-                    </div>
-                </div>
+       <!-- Service Updates -->
+    <section id="updates" class="py-4 bg-light">
+      <div class="container">
+        <h6 class="text-secondary text-uppercase font-weight-semi-bold mb-2">Service Updates</h6>
+        <h2 class="mb-4">Service Alerts, Weather Delays & Notices</h2>
+        <p class="mb-3">
+          For the most up-to-date service information, we post updates on our Facebook page. This includes weather-related
+          delays, snow routes, holiday changes, and other service notices.
+        </p>
+    
+        <style>
+          .updates-card { border-radius: 0.6rem; }
+    
+          /* Facebook embed wrapper */
+            .fb-embed-wrap{
+              position: relative;
+              width: 100%;
+              overflow: hidden;
+              border-radius: 0.6rem;
+              background: #fff;
+              padding-bottom: 95%;
+            }
+            
+            .fb-embed-wrap iframe{
+              position: absolute;
+              inset: 0;
+              width: 100% !important;
+              height: 100% !important;
+              border: 0;
+            
+              transform: scale(1.00);
+              transform-origin: top left;
+            }
+
+        @media (max-width: 900px){
+          .fb-embed-wrap iframe{
+            transform: scaleX(01.00) translateX(-2%);
+            transform-origin: top left;
+            }
+        }
+    
+          /* Force white text on primary button */
+          .btn-primary,
+          .btn-primary:hover,
+          .btn-primary:focus{
+            color:#ffffff !important;
+          }
+        </style>
+    
+        <div class="row">
+          <!-- Facebook Embed -->
+          <div class="col-md-5 mb-4">
+            <div class="bg-white updates-card p-4 h-100 d-flex flex-column">
+              <h5 class="mb-3">Latest Updates on Facebook</h5>
+            
+              <div class="fb-embed-wrap flex-grow-1">
+                <iframe
+                  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61577266925796&tabs=timeline&height=900&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
+                  scrolling="yes"
+                  allowfullscreen="true"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                </iframe>
+              </div>
             </div>
+
+          </div>
+    
+          <!-- Communication Info -->
+          <div class="col-md-7 mb-4">
+            <div class="bg-white updates-card p-3 h-100">
+              <h5 class="mb-3">How We Communicate Updates</h5>
+    
+              <p class="mb-2">
+                Our Facebook page is the primary place for real-time service alerts. If routes are delayed due to weather,
+                snow, road conditions, or unexpected issues, updates will be posted there.
+              </p>
+    
+              <p class="mb-2">
+                Billing notices, account updates, and important customer-specific information may also be sent directly by
+                email or phone when applicable.
+              </p>
+    
+              <ul class="mb-3 pl-0" style="list-style:none;">
+                <li class="mb-2">
+                  <i class="fa fa-bullhorn mr-2 text-primary"></i>
+                  <strong>Facebook:</strong> Service alerts and route updates
+                </li>
+                <li class="mb-2">
+                  <i class="fa fa-envelope mr-2 text-primary"></i>
+                  <strong>Email &amp; Phone:</strong> Billing and account notices
+                </li>
+                <li class="mb-2">
+                  <i class="fa fa-phone mr-2 text-primary"></i>
+                  Questions? Call our office:
+                  <strong><a href="tel:13044388051">(304) 438-8051</a></strong>
+                </li>
+              </ul>
+
+              <a href="https://www.facebook.com/profile.php?id=61577266925796"
+                 target="_blank" rel="noopener"
+                class="btn btn-primary mb-3 d-flex align-items-center justify-content-center">
+                <i class="fa fa-facebook mr-2"></i>Follow Us on Facebook
+              </a>
+    
+              <hr class="my-3">
+    
+              <p class="mb-0">
+                Need to reach us online? Use the contact form below and our team will respond as soon as possible.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
+
+
 
     <!-- FAQ -->
-    <section id="faq" class="py-5 bg-light">
-        <div class="container">
-            <h6 class="text-secondary text-uppercase font-weight-semi-bold mb-2">FAQ</h6>
-            <h2 class="mb-4">Frequently Asked Questions</h2>
-            <div class="mb-4">
-                <h5>When should I put my trash out?</h5>
-                <p>
-                    Please place your bags at the curb the night before your scheduled pickup day. Make sure bags are not overloaded and are visible from the road.
-                    Any items not bagged will not be collected.
-                </p>
+    <section id="faq" class="py-5 bg-white">
+      <div class="container">
+        <h6 class="text-secondary text-uppercase font-weight-semi-bold mb-2">FAQ</h6>
+        <h2 class="mb-4">Frequently Asked Questions</h2>
+    
+        <div class="accordion" id="faqAccordion">
+    
+          <!-- 1 -->
+          <div class="card mb-2" style="border-radius:0.6rem;">
+            <div class="card-header bg-white" id="faqHeadingOne" style="border-radius:0.6rem;">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-left w-100 d-flex align-items-center justify-content-between"
+                        type="button" data-toggle="collapse" data-target="#faqOne" aria-expanded="true"
+                        aria-controls="faqOne" style="text-decoration:none;">
+                  When should I put my trash out?
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+              </h5>
             </div>
-            <div class="mb-4">
-                <h5>What can’t go in my regular trash?</h5>
-                <p>
-                    We cannot accept items such as paint, oil, fuel, chemicals, large electronics, batteries, or tires
-                    in regular household trash. Please contact our office if you’re unsure about specific items.
-                </p>
+    
+            <div id="faqOne" class="collapse show" aria-labelledby="faqHeadingOne" data-parent="#faqAccordion">
+              <div class="card-body">
+                Please place your bags at the curb the night before your scheduled pickup day. Make sure bags are not overloaded and are visible from the road. Any items not bagged will not be collected.
+              </div>
             </div>
-            <div class="mb-0">
-                <h5>How do I start, change, or stop service?</h5>
-                <p>
-                    You can request changes by calling our office or using the contact form below. Please include your
-                    name, service address, and account number (if you have one).
-                </p>
+          </div>
+    
+          <!-- 2 -->
+          <div class="card mb-2" style="border-radius:0.6rem;">
+            <div class="card-header bg-white" id="faqHeadingTwo" style="border-radius:0.6rem;">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-left w-100 d-flex align-items-center justify-content-between collapsed"
+                        type="button" data-toggle="collapse" data-target="#faqTwo" aria-expanded="false"
+                        aria-controls="faqTwo" style="text-decoration:none;">
+                  What can’t go in my regular trash?
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+              </h5>
             </div>
+    
+            <div id="faqTwo" class="collapse" aria-labelledby="faqHeadingTwo" data-parent="#faqAccordion">
+              <div class="card-body">
+                We cannot accept items such as paint, oil, fuel, chemicals, large electronics, batteries, or tires in regular household trash. Please contact our office if you’re unsure about specific items.
+              </div>
+            </div>
+          </div>
+    
+          <!-- 3 -->
+          <div class="card mb-2" style="border-radius:0.6rem;">
+            <div class="card-header bg-white" id="faqHeadingThree" style="border-radius:0.6rem;">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-left w-100 d-flex align-items-center justify-content-between collapsed"
+                        type="button" data-toggle="collapse" data-target="#faqThree" aria-expanded="false"
+                        aria-controls="faqThree" style="text-decoration:none;">
+                  How do I start, change, or stop service?
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+              </h5>
+            </div>
+    
+            <div id="faqThree" class="collapse" aria-labelledby="faqHeadingThree" data-parent="#faqAccordion">
+              <div class="card-body">
+                You can request changes by calling our office or using the contact form below. Please include your name, service address, and account number (if you have one).
+              </div>
+            </div>
+          </div>
+    
+          <!-- 4 -->
+          <div class="card mb-2" style="border-radius:0.6rem;">
+            <div class="card-header bg-white" id="faqHeadingFour" style="border-radius:0.6rem;">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-left w-100 d-flex align-items-center justify-content-between collapsed"
+                        type="button" data-toggle="collapse" data-target="#faqFour" aria-expanded="false"
+                        aria-controls="faqFour" style="text-decoration:none;">
+                  What if I miss my pickup?
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+              </h5>
+            </div>
+    
+            <div id="faqFour" class="collapse" aria-labelledby="faqHeadingFour" data-parent="#faqAccordion">
+              <div class="card-body">
+                If you believe you were missed, please call our office as soon as possible. Missed pickup reports are best made the same day so we can review the route and help quickly.
+              </div>
+            </div>
+          </div>
+    
+          <!-- 5 -->
+          <div class="card mb-2" style="border-radius:0.6rem;">
+            <div class="card-header bg-white" id="faqHeadingFive" style="border-radius:0.6rem;">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-left w-100 d-flex align-items-center justify-content-between collapsed"
+                        type="button" data-toggle="collapse" data-target="#faqFive" aria-expanded="false"
+                        aria-controls="faqFive" style="text-decoration:none;">
+                  Do you pick up bulky items?
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+              </h5>
+            </div>
+    
+            <div id="faqFive" class="collapse" aria-labelledby="faqHeadingFive" data-parent="#faqAccordion">
+              <div class="card-body">
+                Some bulky items may require special handling or an additional fee. Please call ahead with a description of the item and we’ll let you know the options and scheduling.
+              </div>
+            </div>
+          </div>
+    
+          <!-- 6 -->
+          <div class="card mb-2" style="border-radius:0.6rem;">
+            <div class="card-header bg-white" id="faqHeadingSix" style="border-radius:0.6rem;">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-left w-100 d-flex align-items-center justify-content-between collapsed"
+                        type="button" data-toggle="collapse" data-target="#faqSix" aria-expanded="false"
+                        aria-controls="faqSix" style="text-decoration:none;">
+                  What happens during bad weather (snow/ice)?
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+              </h5>
+            </div>
+    
+            <div id="faqSix" class="collapse" aria-labelledby="faqHeadingSix" data-parent="#faqAccordion">
+              <div class="card-body">
+                Weather may delay service or require alternate routes. We post service alerts on Facebook when conditions affect pickup, including snow routes and rescheduled days.
+              </div>
+            </div>
+          </div>
+    
+          <!-- 7 -->
+          <div class="card mb-2" style="border-radius:0.6rem;">
+            <div class="card-header bg-white" id="faqHeadingSeven" style="border-radius:0.6rem;">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-left w-100 d-flex align-items-center justify-content-between collapsed"
+                        type="button" data-toggle="collapse" data-target="#faqSeven" aria-expanded="false"
+                        aria-controls="faqSeven" style="text-decoration:none;">
+                  How do I pay my bill?
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+              </h5>
+            </div>
+    
+            <div id="faqSeven" class="collapse" aria-labelledby="faqHeadingSeven" data-parent="#faqAccordion">
+              <div class="card-body">
+                You can pay by phone, mail, or other methods offered by our office. If you have questions about billing or need help, call (304) 438-8051.
+              </div>
+            </div>
+          </div>
+    
+          <!-- 8 -->
+          <div class="card mb-0" style="border-radius:0.6rem;">
+            <div class="card-header bg-white" id="faqHeadingEight" style="border-radius:0.6rem;">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-left w-100 d-flex align-items-center justify-content-between collapsed"
+                        type="button" data-toggle="collapse" data-target="#faqEight" aria-expanded="false"
+                        aria-controls="faqEight" style="text-decoration:none;">
+                  How do I contact you?
+                  <i class="fa fa-chevron-down"></i>
+                </button>
+              </h5>
+            </div>
+    
+            <div id="faqEight" class="collapse" aria-labelledby="faqHeadingEight" data-parent="#faqAccordion">
+              <div class="card-body">
+                Call us at <a href="tel:13044388051">(304) 438-8051</a> or use the contact form below. We’ll respond as soon as possible.
+              </div>
+            </div>
+          </div>
+    
         </div>
+      </div>
     </section>
+    
 
     <!-- Contact / Service Request -->
-    <section id="contact" class="py-5">
+    <section id="contact" class="py-5 bg-light">
         <div class="container">
             <h6 class="text-secondary text-uppercase font-weight-semi-bold mb-2">Contact</h6>
             <h2 class="mb-4">Get In Touch or Start Service</h2>
             <div class="row">
                 <!-- Contact info -->
                 <div class="col-lg-5 mb-4">
-                    <div class="bg-light rounded p-4 h-100">
+                    <div class="bg-white rounded p-4 h-100">
                         <h5 class="mb-3">Office Information</h5>
                         <p class="mb-2">
                             <i class="fa fa-map-marker-alt text-primary mr-2"></i>
@@ -400,7 +617,7 @@
 
                 <!-- Real form (Formspree) -->
                 <div class="col-lg-7 mb-4">
-                    <div class="bg-light rounded p-4 h-100">
+                    <div class="bg-white rounded p-4 h-100">
                         <h5 class="mb-3">Service Request / Questions</h5>
 
                         <!-- Replace REPLACE_ME with your Formspree endpoint -->
@@ -578,6 +795,33 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

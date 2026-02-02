@@ -10245,5 +10245,68 @@ section.bg-primary {
     height: 34px;
   }
 }
+/* FAQ Accordion Styling */
+#faq .card {
+  border: 1px solid #e4e6e8;
+  border-radius: 0.6rem;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#faq .card + .card {
+  margin-top: 0.75rem;
+}
+
+#faq .card-header {
+  background-color: #f8f9fa; /* soft grey */
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0;
+}
+
+#faq .card-header button {
+  background-color: #f8f9fa; /* same as bg-light */
+  padding: 1rem 1.25rem;
+  width: 100%;
+  font-weight: 600;
+  color: #1f5f4a; /* your green */
+  border-radius: 0.6rem;
+  text-decoration: none;
+}
+
+#faq .card-header button:hover {
+  background-color: #eef5f2; /* light green tint */
+  color: #174a39;
+}
+
+#faq .card-header button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#faq .card-body {
+  padding: 1rem 1.25rem 1.25rem;
+  color: #495057;
+  line-height: 1.6;
+  background-color: #ffffff;
+}
+
+/* Chevron animation */
+#faq .fa-chevron-down {
+  color: #1f5f4a;
+  transition: transform 0.25s ease;
+}
+
+/* Rotate chevron when open */
+#faq .collapse.show + .card-body,
+#faq .card-header button[aria-expanded="true"] .fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+/* Subtle lift on hover */
+#faq .card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  border-color: #d3e5dd;
+}
 
 

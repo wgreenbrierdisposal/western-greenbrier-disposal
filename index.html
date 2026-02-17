@@ -227,64 +227,80 @@
         </div>
     </section>
 
-    <!-- Pay Online -->
-    <section id="pay" class="py-5">
-        <div class="container">
-            <h6 class="text-secondary text-uppercase font-weight-semi-bold mb-2">Pay Online</h6>
-            <h2 class="mb-4">Secure Online Bill Pay</h2>
-            <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <p class="mb-3">
-                        Use our secure online payment portal to pay your bill. You’ll need your invoice number
-                        and the total amount due from your bill.
-                    </p>
-                    <p class="mb-2">
-                        When you click “Go to Secure Payment”, you’ll be sent to our CardPointe payment page to
-                        complete your payment.
-                    </p>
-                    <p class="mb-2 small text-muted">
-                        You will be redirected to CardPointe’s secure page. WGDS does not store card or bank details.
-                    </p>
-                    <p class="mb-0 small text-muted">
-                        Payments are made using a 3rd party secure online payment portal:<br>
-                        <code>Available Payment Methods: ACH, Visa, Mastercard, Discover, &amp; American Express</code>
-                    </p>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="bg-light rounded p-4 h-100">
-                        <h5 class="mb-3">Enter Your Payment Details</h5>
-                        <form id="pay-form">
-                    <div class="form-group">
-                      <label for="invoiceNumber">Invoice Number:</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="invoiceNumber"
-                        required
-                        placeholder="EX. INV-12345"
-                        autocomplete="off"
-                        autocapitalize="characters"
-                        spellcheck="false">
-                      <small class="form-text text-muted">
-                        Must start with <code>INV-</code>
-                      </small>
-                    </div>
-
-                            <div class="form-group">
-                                <label for="invoiceTotal">Total Amount Due:</label>
-                                <input type="number" step="0.01" min="0" class="form-control"  placeholder="EX. 18.92" id="invoiceTotal" required>
+<!-- Pay Online -->
+<section id="pay" class="py-5">
+    <div class="container">
+        <h6 class="text-secondary text-uppercase font-weight-semi-bold mb-2">Pay Online</h6>
+        <h2 class="mb-4">Secure Online Bill Pay</h2>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <p class="mb-3">
+                    Use our secure online payment portal to pay your bill. You'll need your invoice number
+                    and the total amount due from your bill.
+                </p>
+                <p class="mb-2">
+                    When you click "Go to Secure Payment", you'll be sent to our CardPointe payment page to
+                    complete your payment.
+                </p>
+                <p class="mb-2 small text-muted">
+                    You will be redirected to CardPointe's secure page. WGDS does not store card or bank details.
+                </p>
+                <p class="mb-0 small text-muted">
+                    Payments are made using a 3rd party secure online payment portal:<br>
+                    <code>Available Payment Methods: ACH, Visa, Mastercard, Discover, &amp; American Express</code>
+                </p>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="bg-light rounded p-4 h-100">
+                    <h5 class="mb-3">Enter Your Payment Details</h5>
+                    <form id="pay-form">
+                        <div class="form-group">
+                            <label for="invoiceNumber">Invoice Number:</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">INV-</span>
+                                </div>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="invoiceNumber"
+                                    required
+                                    placeholder="48392"
+                                    maxlength="5"
+                                    autocomplete="off"
+                                    autocapitalize="off"
+                                    spellcheck="false">
                             </div>
-                            <button type="submit" class="btn btn-primary text-white" aria-label="Go to secure payment portal">
-                                Go to Secure Payment
-                            </button>
-                            <p id="pay-error" class="mt-2 small text-danger" style="display:none;"></p>
-                        </form>
-                    </div>
+                            <small class="form-text text-muted">
+                                Enter your 5-digit invoice number
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="invoiceTotal">Total Amount Due:</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input
+                                    type="number"
+                                    step="0.01"
+                                    min="0.01"
+                                    class="form-control"
+                                    id="invoiceTotal"
+                                    required
+                                    placeholder="18.92">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary text-white" aria-label="Go to secure payment portal">
+                            Go to Secure Payment
+                        </button>
+                        <p id="pay-error" class="mt-2 small text-danger" style="display:none;"></p>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
-    
+    </div>
+</section>
        <!-- Service Updates -->
     <section id="updates" class="py-4 bg-light">
       <div class="container">
@@ -725,65 +741,55 @@
         // Footer year
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Pay form handler: build CardPointe URL and redirect
-                function validateInvFormat(raw) {
-            let v = (raw || "").trim().toUpperCase();
-        
-            // Must start with INV-
-            if (!v.startsWith("INV-")) {
-                return { ok: false, msg: "Invoice Number must start with INV- (example: INV-48392)." };
-            }
-        
-            // Extract digits after INV-
-            const digits = v.slice(4).replace(/\D/g, "");
-        
-            if (!/^\d{5}$/.test(digits)) {
-                return { ok: false, msg: "Invoice Number must be INV- followed by 5 digits (example: INV-48392)." };
-            }
-        
-            return { ok: true, invoiceNo: digits }; // ← ONLY the 5 digits
+// Pay form handler: build CardPointe URL and redirect
+function validateInvFormat(raw) {
+    const digits = (raw || "").trim().replace(/\D/g, "");
+
+    if (!/^\d{5}$/.test(digits)) {
+        return { ok: false, msg: "Invoice Number must be 5 digits (example: 48392)." };
+    }
+
+    return { ok: true, invoiceNo: digits };
+}
+
+const payForm = document.getElementById('pay-form');
+const payError = document.getElementById('pay-error');
+const basePayUrl = 'https://westerngreenbri.securepayments.cardpointe.com/pay';
+
+if (payForm) {
+    payForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        payError.style.display = 'none';
+        payError.textContent = '';
+
+        const invoiceRaw = document.getElementById('invoiceNumber').value;
+        const totalRaw = document.getElementById('invoiceTotal').value.trim();
+
+        // Validate invoice digits only (INV- is now a visual prepend)
+        const inv = validateInvFormat(invoiceRaw);
+        if (!inv.ok) {
+            payError.textContent = inv.msg;
+            payError.style.display = 'block';
+            return;
         }
 
-        const payForm = document.getElementById('pay-form');
-        const payError = document.getElementById('pay-error');
-        const basePayUrl = 'https://westerngreenbri.securepayments.cardpointe.com/pay';
-        
-        if (payForm) {
-            payForm.addEventListener('submit', function (e) {
-                e.preventDefault();
-                payError.style.display = 'none';
-                payError.textContent = '';
-        
-                const invoiceRaw = document.getElementById('invoiceNumber').value;
-                const totalRaw = document.getElementById('invoiceTotal').value.trim();
-        
-                // ✅ NEW — validate INV format
-                const inv = validateInvFormat(invoiceRaw);
-                if (!inv.ok) {
-                    payError.textContent = inv.msg;
-                    payError.style.display = 'block';
-                    return;
-                }
-        
-                // Existing total validation
-                const totalNum = Number(totalRaw);
-                if (!Number.isFinite(totalNum) || totalNum <= 0) {
-                    payError.textContent = 'Please enter a valid number for the total amount.';
-                    payError.style.display = 'block';
-                    return;
-                }
-        
-                // ✅ IMPORTANT CHANGE:
-                // Send ONLY the 5-digit number to CardPointe
-                const url = basePayUrl
-                    + '?invoice=' + encodeURIComponent(inv.invoiceNo)
-                    + '&total=' + encodeURIComponent(totalNum.toFixed(2))
-                    + '&billCountry=US';
-        
-                window.location.href = url;
-            });
+        // Total is now a clean number field ($ is a visual prepend)
+        const totalNum = Number(totalRaw);
+        if (!Number.isFinite(totalNum) || totalNum <= 0) {
+            payError.textContent = 'Please enter a valid number for the total amount.';
+            payError.style.display = 'block';
+            return;
         }
 
+        // Send ONLY the 5-digit number to CardPointe
+        const url = basePayUrl
+            + '?invoice=' + encodeURIComponent(inv.invoiceNo)
+            + '&total=' + encodeURIComponent(totalNum.toFixed(2))
+            + '&billCountry=US';
+
+        window.location.href = url;
+    });
+}
         // Contact form: AJAX submit to Formspree (no redirect)
         const contactForm = document.getElementById('contact-form');
         const contactStatus = document.getElementById('contact-status');
@@ -830,6 +836,9 @@
 </body>
 
 </html>
+
+
+
 
 
 

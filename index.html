@@ -30,13 +30,11 @@
     }
     </script>
 
-        <!-- Favicons -->
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" href="img/favicon.ico">
     <link rel="manifest" href="img/site.webmanifest">
-    
-
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -45,7 +43,7 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet (from template, safe to keep) -->
+    <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
@@ -56,7 +54,9 @@
 <!-- Scrollspy enabled for active nav highlighting -->
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="80">
 
-    <!-- Top Bar -->
+    
+
+    <!-- Top Bar (desktop) -->
     <div class="container-fluid bg-dark text-white py-2 d-none d-md-block">
         <div class="container d-flex justify-content-between">
             <div>
@@ -70,6 +70,14 @@
                 <small>Serving Western Greenbrier &amp; surrounding counties</small>
             </div>
         </div>
+    </div>
+
+    <!-- FIX: Mobile-visible contact bar so phone/email are accessible on phones -->
+    <div class="container-fluid bg-dark text-white py-2 d-md-none text-center">
+        <small>
+            <a class="text-white mr-3" href="tel:13044388051"><i class="fa fa-phone-alt text-primary mr-1"></i>(304) 438-8051</a>
+            <a class="text-white" href="mailto:info@wgdisposal.com"><i class="fa fa-envelope text-primary mr-1"></i>info@wgdisposal.com</a>
+        </small>
     </div>
 
     <!-- Header / Nav -->
@@ -86,6 +94,7 @@
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- FIX: Removed stray </a> tag that was inside the nav collapse -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
                 <div class="navbar-nav mr-3">
                     <a href="#home" class="nav-item nav-link active">Home</a>
@@ -95,7 +104,6 @@
                     <a href="#faq" class="nav-item nav-link">FAQ</a>
                     <a href="#contact" class="nav-item nav-link">Contact</a>
                 </div>
-                </a>
             </div>
         </div>
     </nav>
@@ -108,7 +116,6 @@
                    <h5 class="text-uppercase font-weight-semi-bold mb-2 text-white">
                       Residential &amp; Commercial Sanitation
                     </h5>
-                    
                     <h1 class="display-4 mb-3 text-green">
                       Bag and Dumpster Trash Collection
                     </h1>
@@ -142,7 +149,7 @@
                         </p>
                         <p class="mb-0">
                             <i class="fa fa-map text-primary mr-2"></i>
-                            <strong>Service Area:</strong> Western Greenbrier County, parts of Fayette and Nicolas County. Please Call to confirm your address.
+                            <strong>Service Area:</strong> Western Greenbrier County, parts of Fayette and Nicolas County. Please call to confirm your address.
                         </p>
                     </div>
                 </div>
@@ -156,7 +163,7 @@
             <h6 class="text-secondary text-uppercase font-weight-semi-bold mb-2">Our Services</h6>
             <h2 class="mb-4">Trash &amp; Sanitation Services</h2>
             <p class="mb-4">
-                We offer simple, reliable trash collection options for homes and businesses. If you’re unsure
+                We offer simple, reliable trash collection options for homes and businesses. If you're unsure
                 what service you need, our team can help you choose the right solution.
             </p>
             <div class="row">
@@ -170,7 +177,7 @@
                             <h5 class="mb-0">Residential Bag Service</h5>
                         </div>
                         <p class="mb-3">
-                            Weekly curbside bag collection. We’ll help you get
+                            Weekly curbside bag collection. We'll help you get
                             set up with service at your address and explain pickup guidelines.
                         </p>
                         <ul class="pl-3 mb-3">
@@ -191,7 +198,7 @@
                             <h5 class="mb-0">Commercial Trash Service</h5>
                         </div>
                         <p class="mb-3">
-                            Trash service for small businesses, offices, and commercial locations. We’ll work with
+                            Trash service for small businesses, offices, and commercial locations. We'll work with
                             you to set a schedule and/or dumpster that fits your operations.
                         </p>
                         <ul class="pl-3 mb-3">
@@ -227,135 +234,134 @@
         </div>
     </section>
 
-<!-- Pay Online -->
-<section id="pay" class="py-5">
-    <div class="container">
-        <h6 class="text-secondary text-uppercase font-weight-semi-bold mb-2">Pay Online</h6>
-        <h2 class="mb-4">Secure Online Bill Pay</h2>
-        <div class="row">
-            <div class="col-lg-6 mb-4">
-                <p class="mb-3">
-                    Use our secure online payment portal to pay your bill. You'll need your invoice number
-                    and the total amount due from your bill.
-                </p>
-                <p class="mb-2">
-                    When you click "Go to Secure Payment", you'll be sent to our CardPointe payment page to
-                    complete your payment.
-                </p>
-                <p class="mb-2 small text-muted">
-                    You will be redirected to CardPointe's secure page. WGDS does not store card or bank details.
-                </p>
-                <p class="mb-0 small text-muted">
-                    Payments are made using a 3rd party secure online payment portal:<br>
-                    <code>Available Payment Methods: ACH, Visa, Mastercard, Discover, &amp; American Express</code>
-                </p>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="bg-light rounded p-4 h-100">
-                    <h5 class="mb-3">Enter Your Payment Details</h5>
-                    <form id="pay-form">
-                        <div class="form-group">
-                            <label for="invoiceNumber">Invoice Number:</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">INV-</span>
+    <!-- Pay Online -->
+    <section id="pay" class="py-5">
+        <div class="container">
+            <h6 class="text-secondary text-uppercase font-weight-semi-bold mb-2">Pay Online</h6>
+            <h2 class="mb-4">Secure Online Bill Pay</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <p class="mb-3">
+                        Use our secure online payment portal to pay your bill. You'll need your invoice number
+                        and the total amount due from your bill.
+                    </p>
+                    <p class="mb-2">
+                        When you click "Go to Secure Payment", you'll be sent to our CardPointe payment page to
+                        complete your payment.
+                    </p>
+                    <p class="mb-2 small text-muted">
+                        You will be redirected to CardPointe's secure page. WGDS does not store card or bank details.
+                    </p>
+                    <p class="mb-0 small text-muted">
+                        Payments are made using a 3rd party secure online payment portal:<br>
+                        <code>Available Payment Methods: ACH, Visa, Mastercard, Discover, &amp; American Express</code>
+                    </p>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="bg-light rounded p-4 h-100">
+                        <h5 class="mb-3">Enter Your Payment Details</h5>
+                        <form id="pay-form">
+                            <div class="form-group">
+                                <label for="invoiceNumber">Invoice Number:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">INV-</span>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="invoiceNumber"
+                                        required
+                                        placeholder="48392"
+                                        maxlength="5"
+                                        autocomplete="off"
+                                        autocapitalize="off"
+                                        spellcheck="false"
+                                        inputmode="numeric">
                                 </div>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="invoiceNumber"
-                                    required
-                                    placeholder="48392"
-                                    maxlength="5"
-                                    autocomplete="off"
-                                    autocapitalize="off"
-                                    spellcheck="false">
+                                <small class="form-text text-muted">
+                                    Enter your 5-digit invoice number
+                                </small>
                             </div>
-                            <small class="form-text text-muted">
-                                Enter your 5-digit invoice number
-                            </small>
-                        </div>
-                        <div class="form-group">
-                            <label for="invoiceTotal">Total Amount Due:</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">$</span>
+                            <div class="form-group">
+                                <label for="invoiceTotal">Total Amount Due:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">$</span>
+                                    </div>
+                                    <input
+                                        type="number"
+                                        step="0.01"
+                                        min="0.01"
+                                        class="form-control"
+                                        id="invoiceTotal"
+                                        required
+                                        placeholder="18.92"
+                                        inputmode="decimal">
                                 </div>
-                                <input
-                                    type="number"
-                                    step="0.01"
-                                    min="0.01"
-                                    class="form-control"
-                                    id="invoiceTotal"
-                                    required
-                                    placeholder="18.92">
                             </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary text-white" aria-label="Go to secure payment portal">
-                            Go to Secure Payment
-                        </button>
-                        <p id="pay-error" class="mt-2 small text-danger" style="display:none;"></p>
-                    </form>
+                            <button type="submit" class="btn btn-primary text-white" aria-label="Go to secure payment portal">
+                                Go to Secure Payment
+                            </button>
+                            <p id="pay-error" class="mt-2 small text-danger" style="display:none;"></p>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-       <!-- Service Updates -->
+    </section>
+
+    <!-- Service Updates -->
     <section id="updates" class="py-4 bg-light">
       <div class="container">
         <h6 class="text-secondary text-uppercase font-weight-semi-bold mb-2">Service Updates</h6>
-        <h2 class="mb-4">Service Alerts, Weather Delays & Notices</h2>
+        <h2 class="mb-4">Service Alerts, Weather Delays &amp; Notices</h2>
         <p class="mb-3">
           For the most up-to-date service information, we post updates on our Facebook page. This includes weather-related
           delays, snow routes, holiday changes, and other service notices.
         </p>
-    
+
         <style>
           .updates-card { border-radius: 0.6rem; }
-    
-          /* Facebook embed wrapper */
-            .fb-embed-wrap{
-              position: relative;
-              width: 100%;
-              overflow: hidden;
-              border-radius: 0.6rem;
-              background: #fff;
-              padding-bottom: 95%;
-            }
-            
-            .fb-embed-wrap iframe{
-              position: absolute;
-              inset: 0;
-              width: 100% !important;
-              height: 100% !important;
-              border: 0;
-            
-              transform: scale(1.00);
+
+          .fb-embed-wrap {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 0.6rem;
+            background: #fff;
+            padding-bottom: 95%;
+          }
+
+          .fb-embed-wrap iframe {
+            position: absolute;
+            inset: 0;
+            width: 100% !important;
+            height: 100% !important;
+            border: 0;
+            transform: scale(1.00);
+            transform-origin: top left;
+          }
+
+          @media (max-width: 900px) {
+            .fb-embed-wrap iframe {
+              transform: scaleX(1.00) translateX(-2%);
               transform-origin: top left;
             }
+          }
 
-        @media (max-width: 900px){
-          .fb-embed-wrap iframe{
-            transform: scaleX(01.00) translateX(-2%);
-            transform-origin: top left;
-            }
-        }
-    
-          /* Force white text on primary button */
           .btn-primary,
           .btn-primary:hover,
-          .btn-primary:focus{
-            color:#ffffff !important;
+          .btn-primary:focus {
+            color: #ffffff !important;
           }
         </style>
-    
+
         <div class="row">
           <!-- Facebook Embed -->
           <div class="col-md-5 mb-4">
             <div class="bg-white updates-card p-4 h-100 d-flex flex-column">
               <h5 class="mb-3">Latest Updates on Facebook</h5>
-            
               <div class="fb-embed-wrap flex-grow-1">
                 <iframe
                   src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61577266925796&tabs=timeline&height=900&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
@@ -365,24 +371,23 @@
                 </iframe>
               </div>
             </div>
-
           </div>
-    
+
           <!-- Communication Info -->
           <div class="col-md-7 mb-4">
             <div class="bg-white updates-card p-3 h-100">
               <h5 class="mb-3">How We Communicate Updates</h5>
-    
+
               <p class="mb-2">
                 Our Facebook page is the primary place for real-time service alerts. If routes are delayed due to weather,
                 snow, road conditions, or unexpected issues, updates will be posted there.
               </p>
-    
+
               <p class="mb-2">
                 Billing notices, account updates, and important customer-specific information may also be sent directly by
                 email or phone when applicable.
               </p>
-    
+
               <ul class="mb-3 pl-0" style="list-style:none;">
                 <li class="mb-2">
                   <i class="fa fa-bullhorn mr-2 text-primary"></i>
@@ -401,12 +406,12 @@
 
               <a href="https://www.facebook.com/profile.php?id=61577266925796"
                  target="_blank" rel="noopener"
-                class="btn btn-primary mb-3 d-flex align-items-center justify-content-center">
+                 class="btn btn-primary mb-3 d-flex align-items-center justify-content-center">
                 <i class="fa fa-facebook mr-2"></i>Follow Us on Facebook
               </a>
-    
+
               <hr class="my-3">
-    
+
               <p class="mb-0">
                 Need to reach us online? Use the contact form below and our team will respond as soon as possible.
               </p>
@@ -416,16 +421,14 @@
       </div>
     </section>
 
-
-
     <!-- FAQ -->
     <section id="faq" class="py-5 bg-white">
       <div class="container">
         <h6 class="text-secondary text-uppercase font-weight-semi-bold mb-2">FAQ</h6>
         <h2 class="mb-4">Frequently Asked Questions</h2>
-    
+
         <div class="accordion" id="faqAccordion">
-    
+
           <!-- 1 -->
           <div class="card mb-2" style="border-radius:0.6rem;">
             <div class="card-header bg-white" id="faqHeadingOne" style="border-radius:0.6rem;">
@@ -438,14 +441,13 @@
                 </button>
               </h5>
             </div>
-    
             <div id="faqOne" class="collapse show" aria-labelledby="faqHeadingOne" data-parent="#faqAccordion">
               <div class="card-body">
                 Please place your bags at the curb the night before your scheduled pickup day. Make sure bags are not overloaded and are visible from the road. Any items not bagged will not be collected.
               </div>
             </div>
           </div>
-    
+
           <!-- 2 -->
           <div class="card mb-2" style="border-radius:0.6rem;">
             <div class="card-header bg-white" id="faqHeadingTwo" style="border-radius:0.6rem;">
@@ -453,19 +455,18 @@
                 <button class="btn btn-link text-left w-100 d-flex align-items-center justify-content-between collapsed"
                         type="button" data-toggle="collapse" data-target="#faqTwo" aria-expanded="false"
                         aria-controls="faqTwo" style="text-decoration:none;">
-                  What can’t go in my regular trash?
+                  What can't go in my regular trash?
                   <i class="fa fa-chevron-down"></i>
                 </button>
               </h5>
             </div>
-    
             <div id="faqTwo" class="collapse" aria-labelledby="faqHeadingTwo" data-parent="#faqAccordion">
               <div class="card-body">
-                We cannot accept items such as paint, oil, fuel, chemicals, large electronics, batteries, or tires in regular household trash. Please contact our office if you’re unsure about specific items.
+                We cannot accept items such as paint, oil, fuel, chemicals, large electronics, batteries, or tires in regular household trash. Please contact our office if you're unsure about specific items.
               </div>
             </div>
           </div>
-    
+
           <!-- 3 -->
           <div class="card mb-2" style="border-radius:0.6rem;">
             <div class="card-header bg-white" id="faqHeadingThree" style="border-radius:0.6rem;">
@@ -478,14 +479,13 @@
                 </button>
               </h5>
             </div>
-    
             <div id="faqThree" class="collapse" aria-labelledby="faqHeadingThree" data-parent="#faqAccordion">
               <div class="card-body">
                 You can request changes by calling our office or using the contact form below. Please include your name, service address, and account number (if you have one).
               </div>
             </div>
           </div>
-    
+
           <!-- 4 -->
           <div class="card mb-2" style="border-radius:0.6rem;">
             <div class="card-header bg-white" id="faqHeadingFour" style="border-radius:0.6rem;">
@@ -498,14 +498,13 @@
                 </button>
               </h5>
             </div>
-    
             <div id="faqFour" class="collapse" aria-labelledby="faqHeadingFour" data-parent="#faqAccordion">
               <div class="card-body">
                 If you believe you were missed, please call our office as soon as possible. Missed pickup reports are best made the same day so we can review the route and help quickly.
               </div>
             </div>
           </div>
-    
+
           <!-- 5 -->
           <div class="card mb-2" style="border-radius:0.6rem;">
             <div class="card-header bg-white" id="faqHeadingFive" style="border-radius:0.6rem;">
@@ -518,14 +517,13 @@
                 </button>
               </h5>
             </div>
-    
             <div id="faqFive" class="collapse" aria-labelledby="faqHeadingFive" data-parent="#faqAccordion">
               <div class="card-body">
-                Some bulky items may require special handling or an additional fee. Please call ahead with a description of the item and we’ll let you know the options and scheduling.
+                Some bulky items may require special handling or an additional fee. Please call ahead with a description of the item and we'll let you know the options and scheduling.
               </div>
             </div>
           </div>
-    
+
           <!-- 6 -->
           <div class="card mb-2" style="border-radius:0.6rem;">
             <div class="card-header bg-white" id="faqHeadingSix" style="border-radius:0.6rem;">
@@ -538,15 +536,14 @@
                 </button>
               </h5>
             </div>
-    
             <div id="faqSix" class="collapse" aria-labelledby="faqHeadingSix" data-parent="#faqAccordion">
               <div class="card-body">
                 Weather may delay service or require alternate routes. We post service alerts on Facebook when conditions affect pickup, including snow routes and rescheduled days.
               </div>
             </div>
           </div>
-    
-          <!-- 7 -->
+
+          <!-- 7 — FIX: Updated to mention online payment option -->
           <div class="card mb-2" style="border-radius:0.6rem;">
             <div class="card-header bg-white" id="faqHeadingSeven" style="border-radius:0.6rem;">
               <h5 class="mb-0">
@@ -558,14 +555,13 @@
                 </button>
               </h5>
             </div>
-    
             <div id="faqSeven" class="collapse" aria-labelledby="faqHeadingSeven" data-parent="#faqAccordion">
               <div class="card-body">
-                You can pay by phone, mail, or other methods offered by our office. If you have questions about billing or need help, call (304) 438-8051.
+                You can pay online using our secure payment portal above — just enter your invoice number and amount due. We also accept payment by phone or mail. If you have questions about your bill, call <a href="tel:13044388051">(304) 438-8051</a>.
               </div>
             </div>
           </div>
-    
+
           <!-- 8 -->
           <div class="card mb-0" style="border-radius:0.6rem;">
             <div class="card-header bg-white" id="faqHeadingEight" style="border-radius:0.6rem;">
@@ -578,18 +574,16 @@
                 </button>
               </h5>
             </div>
-    
             <div id="faqEight" class="collapse" aria-labelledby="faqHeadingEight" data-parent="#faqAccordion">
               <div class="card-body">
-                Call us at <a href="tel:13044388051">(304) 438-8051</a> or use the contact form below. We’ll respond as soon as possible.
+                Call us at <a href="tel:13044388051">(304) 438-8051</a> or use the contact form below. We'll respond as soon as possible.
               </div>
             </div>
           </div>
-    
+
         </div>
       </div>
     </section>
-    
 
     <!-- Contact / Service Request -->
     <section id="contact" class="py-5 bg-light">
@@ -619,7 +613,7 @@
                             <span class="ml-4">Saturday &amp; Sunday: Closed</span>
                         </p>
 
-                        <!-- Google Maps Embed + Open link -->
+                        <!-- Google Maps Embed -->
                         <div class="mt-3">
                             <div class="rounded overflow-hidden" style="height: 220px;">
                                 <iframe
@@ -643,12 +637,11 @@
                     </div>
                 </div>
 
-                <!-- Real form (Formspree) -->
+                <!-- Formspree contact form -->
                 <div class="col-lg-7 mb-4">
                     <div class="bg-white rounded p-4 h-100">
                         <h5 class="mb-3">Service Request / Questions</h5>
 
-                        <!-- Replace REPLACE_ME with your Formspree endpoint -->
                         <form id="contact-form" action="https://formspree.io/f/xaqozwww" method="POST">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
@@ -686,7 +679,7 @@
                             <!-- Honeypot (spam trap) -->
                             <input type="text" name="_gotcha" style="display:none">
 
-                            <button type="submit" class="btn btn-primary">
+                            <button type="submit" class="btn btn-primary text-white">
                                 Send Request
                             </button>
 
@@ -715,7 +708,7 @@
                 </p>
             </div>
             <p class="mb-0 small">
-                Simple, local trash collection for Western Greenbrier  &amp; surrounding counties.
+                Simple, local trash collection for Western Greenbrier &amp; surrounding counties.
             </p>
         </div>
     </footer>
@@ -723,7 +716,7 @@
     <!-- Back to Top -->
     <a href="#home" class="btn btn-primary px-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-    <!-- JS Libraries (same as template, fine to keep) -->
+    <!-- JS Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -733,63 +726,83 @@
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Template JS (for back-to-top, etc.) -->
+    <!-- Template JS -->
     <script src="js/main.js"></script>
 
-    <!-- Auto year + Pay form logic + Contact form submit -->
     <script>
         // Footer year
         document.getElementById('year').textContent = new Date().getFullYear();
+        $('a[href^="#"]').on('click', function(e) {
+                const target = $(this.getAttribute('href'));
+                if (target.length) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 75
+                    }, 600, 'swing');
+                }
+            });
+        // FIX: Enforce digits-only in invoice number field
+        document.getElementById('invoiceNumber').addEventListener('keypress', function(e) {
+            if (!/[0-9]/.test(e.key)) {
+                e.preventDefault();
+            }
+        });
+        // Also catch paste events to strip non-digits
+        document.getElementById('invoiceNumber').addEventListener('paste', function(e) {
+            e.preventDefault();
+            const pasted = (e.clipboardData || window.clipboardData).getData('text');
+            const digitsOnly = pasted.replace(/\D/g, '').substring(0, 5);
+            this.value = digitsOnly;
+        });
 
-// Pay form handler: build CardPointe URL and redirect
-function validateInvFormat(raw) {
-    const digits = (raw || "").trim().replace(/\D/g, "");
-
-    if (!/^\d{5}$/.test(digits)) {
-        return { ok: false, msg: "Invoice Number must be 5 digits (example: 48392)." };
-    }
-
-    return { ok: true, invoiceNo: digits };
-}
-
-const payForm = document.getElementById('pay-form');
-const payError = document.getElementById('pay-error');
-const basePayUrl = 'https://westerngreenbri.securepayments.cardpointe.com/pay';
-
-if (payForm) {
-    payForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        payError.style.display = 'none';
-        payError.textContent = '';
-
-        const invoiceRaw = document.getElementById('invoiceNumber').value;
-        const totalRaw = document.getElementById('invoiceTotal').value.trim();
-
-        // Validate invoice digits only (INV- is now a visual prepend)
-        const inv = validateInvFormat(invoiceRaw);
-        if (!inv.ok) {
-            payError.textContent = inv.msg;
-            payError.style.display = 'block';
-            return;
+        // Pay form handler: build CardPointe URL and redirect
+        function validateInvFormat(raw) {
+            const digits = (raw || "").trim().replace(/\D/g, "");
+            if (!/^\d{5}$/.test(digits)) {
+                return { ok: false, msg: "Invoice Number must be 5 digits (example: 48392)." };
+            }
+            return { ok: true, invoiceNo: digits };
         }
 
-        // Total is now a clean number field ($ is a visual prepend)
-        const totalNum = Number(totalRaw);
-        if (!Number.isFinite(totalNum) || totalNum <= 0) {
-            payError.textContent = 'Please enter a valid number for the total amount.';
-            payError.style.display = 'block';
-            return;
+        const payForm = document.getElementById('pay-form');
+        const payError = document.getElementById('pay-error');
+        const basePayUrl = 'https://westerngreenbri.securepayments.cardpointe.com/pay';
+
+        if (payForm) {
+            payForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                payError.style.display = 'none';
+                payError.textContent = '';
+
+                const invoiceRaw = document.getElementById('invoiceNumber').value;
+                const totalRaw = document.getElementById('invoiceTotal').value.trim();
+
+                // Validate invoice digits only (INV- is a visual prepend)
+                const inv = validateInvFormat(invoiceRaw);
+                if (!inv.ok) {
+                    payError.textContent = inv.msg;
+                    payError.style.display = 'block';
+                    return;
+                }
+
+                // Total is a clean number field ($ is a visual prepend)
+                const totalNum = Number(totalRaw);
+                if (!Number.isFinite(totalNum) || totalNum <= 0) {
+                    payError.textContent = 'Please enter a valid amount greater than $0.00.';
+                    payError.style.display = 'block';
+                    return;
+                }
+
+                // Send ONLY the 5-digit number to CardPointe
+                const url = basePayUrl
+                    + '?invoice=' + encodeURIComponent(inv.invoiceNo)
+                    + '&total=' + encodeURIComponent(totalNum.toFixed(2))
+                    + '&billCountry=US';
+
+                window.location.href = url;
+            });
         }
 
-        // Send ONLY the 5-digit number to CardPointe
-        const url = basePayUrl
-            + '?invoice=' + encodeURIComponent(inv.invoiceNo)
-            + '&total=' + encodeURIComponent(totalNum.toFixed(2))
-            + '&billCountry=US';
-
-        window.location.href = url;
-    });
-}
         // Contact form: AJAX submit to Formspree (no redirect)
         const contactForm = document.getElementById('contact-form');
         const contactStatus = document.getElementById('contact-status');
@@ -836,49 +849,3 @@ if (payForm) {
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

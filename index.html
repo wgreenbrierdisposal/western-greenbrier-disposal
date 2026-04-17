@@ -759,8 +759,8 @@
         // Pay form handler: build CardPointe URL and redirect
         function validateInvFormat(raw) {
             const digits = (raw || "").trim().replace(/\D/g, "");
-            if (!/^\d{5}$/.test(digits)) {
-                return { ok: false, msg: "Invoice Number must be 5 digits (example: 48392)." };
+            if (!/^\d{6}$/.test(digits)) {
+                return { ok: false, msg: "Invoice Number must be 5-6 digits (example: 48321)." };
             }
             return { ok: true, invoiceNo: digits };
         }

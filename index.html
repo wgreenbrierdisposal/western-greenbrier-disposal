@@ -752,15 +752,15 @@
         document.getElementById('invoiceNumber').addEventListener('paste', function(e) {
             e.preventDefault();
             const pasted = (e.clipboardData || window.clipboardData).getData('text');
-            const digitsOnly = pasted.replace(/\D/g, '').substring(0, 5);
+            const digitsOnly = pasted.replace(/\D/g, '').substring(0, 6);
             this.value = digitsOnly;
         });
 
         // Pay form handler: build CardPointe URL and redirect
         function validateInvFormat(raw) {
             const digits = (raw || "").trim().replace(/\D/g, "");
-            if (!/^\d{6}$/.test(digits)) {
-                return { ok: false, msg: "Invoice Number must be 5-6 digits (example: 48321)." };
+           if (!/^\d{5,6}$/.test(digits)) {
+                return { ok: false, msg: "Invoice Number must be 5 or 6 digits (example: 48321 or 103158)." };
             }
             return { ok: true, invoiceNo: digits };
         }
